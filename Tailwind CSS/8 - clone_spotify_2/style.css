@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .header-container {
+    @apply flex bg-black px-10 py-4 justify-center fixed w-full flex-wrap 
+  }
+  .navbar-nav {
+    @apply flex items-center p-0
+  }
+  .navbar-brand {
+    @apply w-110px mb-5
+  }
+  .separator {
+    @apply border-r mx-2 border-white
+  }
+  .navbar-item {
+    @apply mx-1 whitespace-nowrap
+  }
+  .navbar-link {
+    @apply text-white hover:text-main-green text-xs font-bold
+  }
+  .main-container {
+    @apply bg-main-purple bg-bursts-mobile bg-position-mobile  bg-no-repeat h-100vh bg-130% flex justify-center items-center flex-col pt-36
+  }
+  .main-heading {
+    @apply text-7xl max-w-xl leading-none text-center font-bold text-main-green
+  }
+  .main-text {
+    @apply text-main-green my-5 text-sm text-center
+  }
+  .main-btn {
+    @apply px-8 mt-5 py-2 uppercase rounded-full bg-main-green text-main-purple font-semibold hover:bg-white transition-all duration-500
+  }
+  .footer-container {
+    @apply bg-black grid grid-cols-1 py-24 justify-items-start gap-y-10 pl-5 
+  }
+  .footer-container > * {
+    @apply col-span-1
+  }
+  .footer-cell {
+    @apply flex flex-col 
+  }
+  .list-heading {
+    @apply text-gray-500 uppercase text-base font-bold mb-2
+  }
+  .footer-list {
+    @apply w-full flex flex-col
+  }
+  .footer-list-item {
+    @apply my-2 text-base text-white
+  }
+  .footer-brand {
+    @apply w-80px
+  }
+  #icons-cell {
+    @apply flex
+  }
+  .icons-link {
+    @apply flex justify-center items-center w-10 h-10 bg-slate-800 mr-4 rounded-full text-white
+  }
+  .icons-link i {
+    @apply text-xl
+  }
+  .icons-link:hover i {
+    @apply text-main-green
+  }
+  .footer-bottom-list {
+    @apply flex flex-wrap
+  }
+  .fb-li {
+    @apply mx-2 my-2 text-sm text-gray-700 tracking-tighter whitespace-nowrap
+  }
+  #copy-cell {
+    @apply justify-self-end
+  }
+  .copy {
+    @apply text-gray-700 text-sm tracking-tighter pr-4
+  }
+}
+
+@screen md {
+  .header-container {
+    @apply px-36 justify-between flex-nowrap
+  }
+  .navbar-brand {
+    @apply w-110px h-35px m-0
+  }
+  .navbar-nav {
+    @apply h-full
+  }
+  .navbar-item {
+    @apply mx-2
+  }
+  .main-container {
+    @apply bg-position-md bg-bursts bg-180% h-80vh p-0
+  }
+  .main-heading {
+    @apply text-10xl
+  }
+  #links-cell {
+    @apply col-span-5 justify-self-start
+  }
+  #icons-cell {
+    @apply col-span-2 justify-self-end
+  }
+  .footer-container {
+    @apply justify-items-center px-20 grid-cols-6 gap-y-5 gap-x-4 pl-0
+  }
+  .footer-bottom-list {
+    @apply pl-16
+  }
+  .list-heading {
+    @apply text-xs text-left
+  }
+  .footer-list-item {
+    @apply mb-2 text-sm
+  }
+  .fb-li {
+    @apply text-xs
+  }
+}

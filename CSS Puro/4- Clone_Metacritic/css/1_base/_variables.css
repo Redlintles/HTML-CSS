@@ -1,0 +1,19 @@
+:root {
+  --navbar-width: 100%;
+  --main-container-width: 100%;
+  --main-yellow: #FDCA21;
+  --secondary-yellow: #CAA42D;
+  --main-green: #66CC33;
+  --main-red: #FF0000;
+  --main-black: #111111;
+  --main-gray: #5A43D9;
+  --light-blue: #28DBD9;
+  --footer-bg: #424242;
+}
+
+@media(min-width: 1200px) {
+  :root {
+  --navbar-width: 968px;
+  --main-container-width: 768px;
+  }
+}

@@ -1,0 +1,31 @@
+@use "../3_modules/mixins";
+
+#gallery-container .row {
+
+  > *{
+    margin: 1rem 0;
+  }
+  @include mixins.media {
+    :nth-of-type(2n-1) {
+      padding-right: 1rem;
+    }
+    :nth-of-type(2n) {
+      padding-left: 1rem;
+    }
+  }
+  .art-unity{
+    h3 {
+      font-size: 1.5rem;
+    }
+    > * {
+      margin: .5rem 0;
+    }
+    p {
+      font-size: .9rem;
+    }
+  }
+  .btn {
+    @include mixins.button;
+  }
+
+}

@@ -1,0 +1,65 @@
+@use "../1_base/variables";
+@use "../3_modules/_mixins";
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: 0 .5rem;
+
+  @include mixins.media800 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    height: 3.2rem;
+
+    @include mixins.media450 {
+      width: 90%;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
+    justify-content: center;
+
+    @include mixins.media450 {
+      margin: 1rem 0;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+
+    @include mixins.media450 {
+      margin-bottom: 1rem;
+      margin-right: .5rem;
+    }
+  }
+  &__link {
+    font-size: .6rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+
+    @include mixins.media800 {
+      font-size: .9rem;
+    }
+
+    &--red {
+      color: variables.$main-red;
+    }
+
+  }
+}

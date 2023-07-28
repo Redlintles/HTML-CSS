@@ -1,0 +1,369 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-container {
+    @apply grid text-white
+  }
+  /* Header Top */
+  .header-top {
+    @apply flex flex-wrap bg-darkblue-900 px-2 py-2 items-center
+  }
+  .hti-container {
+    @apply py-1 px-2 border-gray-700 hover:border-white rounded cursor-pointer
+  }
+  .htb-container {
+   @apply flex mx-2 py-2 border border-transparent hover:border-white
+  }
+  .htb-container img {
+    @apply h-7
+  }
+  .htb-container span {
+    @apply mt-1 ml-1 text-xs font-semibold
+  }
+  .htf-container {
+    @apply w-full flex-grow pt-1 order-2
+  }
+  .htf-form {
+    @apply flex
+  }
+  .htf-select {
+    @apply hidden p-2 text-xs text-gray-700 bg-gray-100 hover:bg-gray-300 rounded-tl rounded-bl border-r border-gray-500
+  }
+  .htf-input {
+    @apply p-2 flex-grow rounded-l
+  }
+  .htf-submit {
+    @apply px-4 bg-gold-100 hover:bg-gold-200 rounded-tr rounded-br
+  }
+  .htf-submit i {
+    @apply text-darkblue-800 text-xl mt-1
+  }
+  .hts-container {
+    @apply hidden ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer
+  }
+  .hts-container:first-child {
+    @apply leading-3
+  }
+  .hts-container p + p {
+    @apply font-extrabold
+  }
+  .hts-container i {
+    @apply ml-1
+  }
+  .htc-container {
+    @apply p-2 border border-transparent hover:border-white rounded-sm absolute right-0 top-0 mr-2 mt-2  flex order-1
+  }
+  .htc-container i {
+    @apply flex text-2xl
+  }
+  .htc-container span:nth-of-type(1) {
+    @apply font-bold text-gold-200 text-base absolute top-0 left-0 -mt-1 ml-5 flex justify-center items-center w-6 h-6 bg-darkblue-600 rounded-full
+  }
+  .htc-container span + span {
+    @apply hidden text-xs font-extrabold
+  }
+  /* Middle Header */
+  .middle-header-container {
+    @apply flex bg-darkblue-600 text-sm px-2 py-2 items-center
+  }
+  .mhi-container {
+    @apply flex items-center border border-transparent hover:border-white rounded-sm p-2 cursor-pointer
+  }
+  .mhi-container div {
+    @apply mr-1
+  }
+  .mhi-icon i {
+    @apply text-lg
+  }
+  .mhi-text {
+    @apply flex leading-tight text-xs
+  }
+  .mhi-text:first-child {
+    @apply mx-1
+  }
+  .mhi-text:last-child {
+    @apply font-bold
+  }
+  .mhl-container {
+    @apply hidden
+  }
+  .mhl-list {
+    @apply flex ml-10 text-sm
+  }
+  .mhl-item {
+    @apply mr-4 border border-transparent hover:border-white rounded-sm px-2 py-1
+  }
+  /* Bottom Header */
+  .bottom-header-container {
+    @apply flex text-black px-4 text-xs border-b border-gray-300 bg-gray-100 pt-1
+  }
+  .btc-department {
+    @apply block py-2 font-bold
+  }
+  .btc-list {
+    @apply hidden
+  }
+  .btc-list-item {
+    @apply hover:text-orange-600 border-b-2 border-transparent hover:border-orange-600 py-1 px-3
+  }
+  /* Body */
+  /* Aside */
+  .aside-container {
+    @apply col-span-1 hidden pl-2 my-2 border-r border-gray-300 text-xs
+  }
+  .aside-title {
+    @apply font-bold
+  }
+  .aside-list {
+    @apply pl-2 mb-2
+  }
+  .aside-list-item {
+    @apply text-gray-800 hover:text-orange-600
+  }
+  /* Main Content */
+  /* Títulos e Categorias(tc) */
+  .main-container-cell {
+    @apply col-span-6 p-2
+  }
+  .main-container {
+    @apply flex flex-col
+  }
+  .tc-container {
+    @apply text-center
+  }
+  .tc-title {
+    @apply text-2xl font-bold mb-2
+  }
+  .tc-list {
+    @apply flex flex-wrap justify-center px-4 pb-2
+  }
+  .tc-link {
+    @apply text-blue-600 underline hover:text-orange-600 px-1 border-r border-black
+  }
+  /* Main Banner */
+  .main-banner {
+    @apply hidden my-6
+  }
+  /* Prime Sign */
+  .ps-container {
+    @apply flex flex-col items-center my-8 py-1
+  }
+  .ps-text {
+    @apply font-bold text-center border-gray-300 leading-5 pr-2 mt-10 mb-4
+  }
+  .ps-btn {
+    @apply text-sm bg-yellow-300 inline-block border border-yellow-700 rounded px-3 py-3 h-12 items-center w-full text-center
+  }
+  /* Categorias */
+  .cat-container {
+    @apply flex flex-col px-6 pb-8 border-b border-gray-300
+  }
+  .cat-title {
+    @apply text-center text-xl font-bold mb-4
+  }
+  .cat-list {
+    @apply flex flex-wrap px-2 text-xs font-bold justify-center
+  }
+  .cat-list-item {
+    @apply text-center mx-3 mb-4
+  }
+  .cat-img {
+    @apply rounded w-full mb-2 mx-auto
+  }
+  /* Products Grid */
+  .pgrid-container {
+    @apply flex flex-col
+  }
+  .filter-container {
+    @apply flex justify-between py-2 px-4 text-sm
+  }
+  .ob-container {
+    @apply flex md:flex-none
+  }
+  .ob-select {
+    @apply bg-gray-300 pr-4 md:pr-12 ml-3 rounded-sm border border-gray-600 text-xs px-1
+  }
+  .products-grid {
+    @apply flex flex-wrap border border-gray-300 divide-x divide-gray-300 mb-10
+  }
+  .product {
+    @apply w-1/2 md:w-1/4 flex flex-col px-8 py-4 border-b border-gray-300 
+  }
+  .product-img {
+    @apply h-210px place-self-center p-2
+  }
+  .product-price {
+    @apply text-red-700 mt-10
+  }
+  .product-discount {
+    @apply text-sm mb-2
+  }
+  .product-timer {
+    @apply text-xs text-gray-700 mb-2
+  }
+  .product-name {
+    @apply text-sm text-blue-600 hover:underline hover:text-orange-600 mb-2
+  }
+  .product-prime-only {
+    @apply text-sm mb-8
+  }
+  .product-prime-only-link {
+    @apply text-xs text-blue-600 hover:underline hover:text-orange-600
+  }
+  .product-btn {
+    @apply text-xs bg-gray-200 border border-gray-600 rounded-sm py-1
+  }
+  /* Footer Container */
+  .footer-container {
+    @apply flex flex-col text-white
+  }
+  .footer-to-top {
+    @apply py-4 text-center bg-darkblue-600 hover:bg-darkblue-500 text-sm
+  }
+  /* Upper Footer */
+  .upper-footer {
+    @apply flex flex-wrap md:flex-nowrap md:justify-around p-10 md:px-20 bg-darkblue-700
+  }
+  .ufl-container {
+    @apply w-1/2 md:w-auto mb-4 md:mb-0 
+  }
+  .ufl-title {
+    @apply font-bold mb-2
+  }
+  .ufl-list {
+    @apply text-xs w-3/4
+  }
+  .ufl-list-item {
+    @apply mb-2 text-gray-400 hover:underline leading-4
+  }
+  /* Middle Footer */
+  .middle-footer {
+    @apply hidden md:flex flex-col items-center bg-darkblue-700 border-t border-gray-700 pt-6 pb-4
+  }
+  .mf-country-list {
+    @apply flex flex-wrap justify-center text-xs py-4 w-3/4 text-gray-400
+  }
+  .mf-country-list-item {
+    @apply px-2 border-r border-gray-600 hover:underline
+  }
+  .dont-forget {
+    @apply flex text-xs
+  }
+  .dont-forget-text {
+    @apply text-gray-600 mr-2
+  }
+  .dont-forget-link {
+    @apply text-gray-400 hover:underline
+  }
+  /* Bottom Footer */
+  .bottom-footer {
+    @apply flex flex-col items-center bg-darkblue-900 text-xs pt-8 md:pt-2
+  }
+  .bfl-container {
+    @apply flex flex-col md:flex-row mb-10
+  }
+  .bfl-list {
+    @apply flex
+  }
+  .bfl-list-item {
+    @apply px-2 border-none md:border-r text-center md:text-left border-gray-600 hover:underline
+  }
+  .bfl-text {
+    @apply text-center md:text-left mt-8 md:mt-0 ml-4 text-gray-600
+  }
+  .bottom-footer-text {
+    @apply hidden md:block mt-10 text-gray-600
+  }
+  .bottom-footer-text a {
+    @apply text-blue-800
+  }
+}
+
+@screen md {
+  .header-top {
+    @apply flex-nowrap
+  }
+  .hti-container {
+    @apply border
+  }
+  .htf-container {
+    @apply w-auto ml-3 order-none
+  }
+  .htf-select,.hts-container {
+    @apply block
+  }
+  .htf-input {
+    @apply rounded-none
+  }
+  .htc-container {
+    @apply mr-0 top-0 relative order-none
+  }
+  .htc-container i {
+    @apply mr-2
+  }
+  .htc-container span+span {
+    @apply flex
+  }
+  /* Middle Header */
+  .mhi-container {
+    @apply py-0
+  }
+  .mhi-text,.mhl-container {
+    @apply block
+  }
+  .mhi-text:first-child {
+    @apply mx-0
+  }
+  /* Bottom Header */
+  .btc-department {
+    @apply hidden
+  }
+  .btc-list {
+    @apply flex
+  }
+  /* Body */
+  /* Aside */
+  .aside-container {
+    @apply block
+  }
+  /* Main-content */
+  /* Títulos e Categorias */
+  .main-container-cell {
+    @apply col-span-5
+  }
+  .tc-title {
+    @apply text-3xl font-normal
+  }
+  .tc-list {
+    @apply flex-nowrap px-0 text-sm
+  }
+  /* Main Banner */
+  .main-banner {
+    @apply block
+  }
+  /* Prime Sign Container */
+  .ps-container {
+    @apply flex-row
+  }
+  .ps-text {
+    @apply w-3/4 border-r-2 m-0
+  }
+  .ps-btn {
+    @apply text-xs py-0 ml-10 h-8 flex w-auto
+  }
+  /* Categorias */
+  .cat-title {
+    @apply text-left
+  }
+  .cat-list {
+    @apply flex-nowrap justify-start
+  }
+  .cat-list-item {
+    @apply mb-0
+  }
+  .cat-img {
+    @apply w-75px
+  }
+}

@@ -1,0 +1,58 @@
+@use "../1-base/_variables"
+@use "mixins"
+
+.job
+    @include mixins.flex($d: column)
+    margin-bottom: 2rem
+
+    *
+        margin: 1rem 0
+
+    h4
+        font-size: 3rem
+
+    &-container
+        @include mixins.flex($w: wrap)
+        width: 100%
+
+        @include mixins.mobile
+            flex-direction: column
+
+
+        &-card
+            width: 26%
+            @include mixins.flex($d: column)
+            height: 30rem
+            margin: 2rem 1rem
+            border: 2px solid variables.$secondary-bg
+            box-shadow: none
+            transition: .5s box-shadow
+
+            @include mixins.mobile
+                width: 98%
+                margin: 2rem auto
+            
+            *
+                margin: 0 1rem 1.5rem 1rem
+                text-align: center
+
+            i
+                font-size: 5rem
+                color: variables.$primary-color
+   
+            h3
+                font-size: 1.5rem
+
+            p
+                font-size: 1.2rem
+
+            &:hover
+                box-shadow: 2px 2px 2px variables.$text-color
+                border-color: transparent
+
+    h4,button    
+        margin: 0 auto
+
+
+
+

@@ -1,0 +1,79 @@
+.mini-banner {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: no-repeat right center / 120px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.mini-banner * {
+  color: var(--light-bg-color);
+}
+.mini-banner h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.mini-banner a {
+  text-decoration: underline;
+  transition: .5s;
+  font-weight: 600;
+}
+#banner1 {
+  background-image: url("../../img/relogio1.png");
+  background-color: var(--dark-bg-color);
+}
+#banner2 {
+  background-image: url("../../img/relogio2.png");
+  background-color: var(--primary-color);
+}
+#banner3 {
+  background-image: url("../../img/relogio3.png");
+  background-color: var(--light-bg-color);
+}
+#banner3 h3,
+#banner3 a, 
+#banner2 a:hover {
+  color: var(--dark-bg-color)
+}
+#banner1 a:hover,
+#banner3 a:hover {
+  color: var(--primary-color);
+}
+@media (min-width: 768px) {
+  #banners-container {
+    margin-top: -2rem;
+    z-index: 10;
+    position: relative;
+  }
+  .mini-banner {
+    width: 30%;
+    margin: 0;
+  }
+}
+
+/* Banner Lateral */
+
+#nwsp-banner {
+  background-color: var(--dark-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#nwsp-banner > * {
+  margin: .5rem 0;
+}
+#fspan {
+  color: var(--secondary-color);
+}
+#nwsp-banner h3 {
+  color: var(--light-bg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+#lspan {
+  color: var(--primary-color);
+}

@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    @apply justify-center items-center
+  }
+}
+
+@layer components {
+  /* Header Top */
+  #header-top {
+    @apply flex flex-col py-4 border-b border-gray-400 flex-center
+  }
+  .ht-brand {
+    @apply flex flex-center
+  }
+  .htb-logo {
+    @apply h-full w-10
+  }
+  .htb-title {
+    @apply ml-2 font-semibold text-2xl
+  }
+  .ht-text {
+    @apply text-sm text-main-dark
+  }
+  /* Header Bottom */
+  #header-bottom {
+    @apply py-4 flex flex-center
+  }
+  .hb-list {
+    @apply flex flex-center
+  }
+  .hb-list-item {
+    @apply mx-2 text-sm text-main-dark transition duration-500 hover:text-bege
+  }
+
+  /* Main */
+  #art-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 w-full md:w-9/12 lg:w-8/12 mx-auto gap-x-10
+  }
+  #first-art,.ag-title {
+    @apply md:col-span-2
+  }
+  .fa-caption {
+    @apply px-6 py-4 absolute left-5 bottom-5 bg-white flex flex-col
+  }
+  .art-container {
+    @apply flex flex-col mb-5 px-8 md:p-0
+  }
+  .ag-title {
+    @apply my-5 text-center font-semibold text-2xl
+  }
+  #first-art {
+    @apply bg-[url('../img/g_1.jpg')] bg-center bg-cover h-72 md:h-96 relative mx-8 md:mx-0
+  }
+  .ac-bg {
+    @apply bg-center bg-cover h-48 mb-2
+  }
+  .ac-title {
+    @apply font-semibold text-xl mb-2
+  }
+  .ac-btn {
+    @apply bg-main-dark transition duration-500 hover:bg-main-dark-hover px-4 py-2 text-white w-min
+  }
+  .ac-date {
+    @apply text-gray-400 text-xs mb-2
+  }
+  #art2 {
+    @apply bg-[url('../img/g_2.jpg')]
+  }
+  #art3 {
+    @apply bg-[url('../img/g_3.jpg')]
+  }
+  #art4 {
+    @apply bg-[url('../img/g_4.jpg')]
+  }
+  #art5 {
+    @apply bg-[url('../img/g_5.jpg')]
+  }
+  #art6 {
+    @apply bg-[url('../img/g_6.jpg')]
+  }
+
+  /* Footer */
+
+  #footer-container {
+    @apply flex flex-col flex-center border-t border-gray-400 py-4
+  }
+
+  .fc-text {
+    @apply text-main-dark text-sm mb-4
+  }
+  .fc-media {
+    @apply flex mb-4
+  }
+  .fc-media a {
+    @apply mx-2 p-1 w-7 h-7 text-sm bg-secondary-color transition duration-500 hover:bg-bege rounded-full text-white leading-none flex flex-center text-center
+  }
+  .fc-copy {
+    @apply text-main-dark text-sm
+  }
+
+
+
+}

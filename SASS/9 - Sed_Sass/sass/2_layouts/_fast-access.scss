@@ -1,0 +1,67 @@
+@use "../1_base/variables";
+
+
+
+.fast-access {
+  display: flex;
+  flex-direction: column;
+  padding: 0 .8rem;
+  width: 100%;
+
+  &__title {
+    padding: 1rem 0;
+
+    h2 {
+      font-size: 1.1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #999;
+    }
+  }
+
+  &_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: .2rem;
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: variables.$light-blue;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: variables.$main-blue;
+      width: 5px;
+      height: 5px;
+      margin-right: .5rem;
+      margin-bottom: .1rem;
+    }
+
+  }
+
+  &__link {
+    color: variables.$text-blue;
+    font-weight: bold;
+    font-size: .7rem;
+    width: 100%;
+    height: 100%;
+
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &::after {
+      position: absolute;
+      top:0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      content: "";
+    }
+  }
+}

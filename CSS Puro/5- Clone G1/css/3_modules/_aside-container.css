@@ -1,0 +1,19 @@
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.aside-container--style {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.aside-container__title {
+  opacity: .8;
+  margin-bottom: 1rem;
+}
+@media(min-width: 768px) {
+  .aside-container {
+    padding: 1rem;
+  }
+}

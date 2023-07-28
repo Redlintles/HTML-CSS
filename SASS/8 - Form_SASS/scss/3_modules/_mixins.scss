@@ -1,0 +1,20 @@
+@mixin flex ($jc: start, $ai: start, $d: row,$w:wrap) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $d;
+  flex-wrap: $w;
+}
+
+@mixin media ($mf:1, $res:768px) {
+  @if $mf {
+    @media (min-width: $res) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $res) {
+      @content;
+    }
+  }
+
+}

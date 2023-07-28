@@ -1,0 +1,92 @@
+#deal-headset {
+  height: 680px;
+  background-color: var(--section-bg-color);
+  background-image: url("../../img/deal_headset.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position-y: 100%;
+  background-position-x: 50%;
+}
+
+#deal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+#deal-container .col-5 {
+  display: flex;
+  justify-content: center;
+}
+
+#deal-container > * {
+  margin-bottom: 1rem;
+}
+
+#deal-container > *:not(.time-container,button){
+  text-transform: uppercase
+}
+
+.time-container {
+  display: flex;
+}
+
+.time-ball {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  border-radius: 50%;;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+
+}
+
+.time-unity {
+  color: var(--light-color);
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.time-label {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+
+#deal-container h1{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#deal-container h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  .time-ball {
+    margin: 0 1rem;
+  }
+
+  #deal-headset {
+    height: 400px;
+    background-size: 380px;
+    background-position-x: 100%;
+  }
+
+  #deal-container h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  #deal-container h2 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,45 @@
+@use "../3_modules/mixins";
+@use "../1_base/variables";
+
+@for $i from 1 through 4 {
+  .slide_#{$i} {
+    @include mixins.background($img: url("../img/banner#{$i}.jpg"))
+  }
+}
+
+.carousel {
+  height: 300px;
+
+  @include mixins.media {
+    height: 500px;
+  }
+}
+
+.carousel-caption {
+  background-color: variables.$primary-bg-color;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem;
+  width: 95%;
+
+  @include mixins.media {
+    width: 70%;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+
+    @include mixins.media {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: .8rem;
+
+
+  }
+}

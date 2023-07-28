@@ -1,0 +1,43 @@
+form {
+  padding: .5rem 1rem;
+  border: 1px solid var(--secondary-color);
+  width: 90%;
+  height: 3.5rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+form i {
+  color: var(--primary-color);
+  align-self: center;
+}
+.form-control {
+  background-color: transparent;
+  border: none;
+}
+.form-control::placeholder {
+  color: var(--light-color);
+}
+.form-control:focus {
+  background-color: transparent;
+  color: var(--light-color);
+}
+#nls form {
+  margin-bottom: 1rem;
+}
+
+/* Form da Newsletter */
+
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+#form-container i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+@media (min-width:768px) {
+  form {
+    width: auto;
+    margin: 0;
+  }
+}

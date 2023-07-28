@@ -1,0 +1,48 @@
+@use "../1-base/variables"
+@use "../3-modules/modules-mixins"
+@use "../2-layouts/mixins"
+
+
+@for $i from 1 through 3
+    #banner-#{$i}
+        background-image: url("../img/banner-#{$i}.jpg")
+
+
+.banner
+    height: 100%
+    @include modules-mixins.center_bg
+    width:30%
+    border-radius: 20px
+
+    @include mixins.mobile
+        width: 80%
+        margin: 1rem 0
+        height: 300px
+
+    &-cover
+        width:70%
+        height: 100%
+        opacity: .8
+        background-color: variables.$primary-color
+        border-radius: 20px 0 50% 20px
+        @include mixins.flex
+
+    &-content
+        padding: 1rem 15%
+
+        h2
+            font-weight: bold
+            font-size: 1.75rem
+            margin-bottom: 2rem
+            
+
+        *
+            color: variables.$light-color
+
+        i
+            margin-left: .5rem
+
+        a
+            font-size: 1.5rem
+
+        

@@ -1,0 +1,48 @@
+
+/* Main Container Aside option */
+
+#ar-show:checked ~ #accordion-right {
+  display: block;
+  grid-column: 2/3;
+}
+#ar-show:checked ~ #video-container,
+#ar-show:checked ~ #main-menu {
+  grid-column:  1/2;
+}
+#ar-show:checked ~ #main-menu .trigger-container label:nth-child(2),
+#ar-show:checked ~ #main-menu #course-content-wrapper {
+  display: none;
+}
+
+/* Main Menu Change Section */
+
+#search-icon:checked ~ #search-wrapper,
+#course-content:checked ~ #course-content-wrapper,
+#overview:checked ~ #overview-wrapper,
+#qea:checked ~ #qa-wrapper,
+#obs:checked ~ #obs-wrapper,
+#ads:checked ~ #ad-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#search-icon:checked ~ .trigger-container label:nth-child(1),
+#course-content:checked ~ .trigger-container label:nth-child(2),
+#overview:checked ~ .trigger-container label:nth-child(3),
+#qea:checked ~ .trigger-container label:nth-child(4),
+#obs:checked ~ .trigger-container label:nth-child(5),
+#ads:checked ~ .trigger-container label:nth-child(6) {
+  border-bottom: 3px solid black;
+  color: black;
+}
+
+/* Overview Show & Hide */
+#over-show:checked ~ #main-menu #overview-wrapper .overview-container {
+  max-height: unset;
+  overflow-y: visible;
+}
+#over-show:checked ~ #main-menu #overview-wrapper #over-show-label i{
+  transform: rotate(180deg);
+}
+#over-show:checked ~ #main-menu #overview-wrapper #over-show-label::before {
+  content: "Mostrar Menos";
+}

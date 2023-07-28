@@ -1,0 +1,76 @@
+@use "../1-base/_variables"
+@use "mixins"
+
+.navbar
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding: 1.9rem
+    background-color: variables.$black
+    position: fixed
+    align-items: center
+    z-index: 10
+
+    *
+        color: variables.$light-color
+    
+    i
+        font-size: 2.3rem
+
+    &-links-container
+        display: flex
+        align-items: center
+
+        @include mixins.mobile
+            display: none
+
+        ul
+            margin: 0 1rem
+
+            li
+                margin: 0 .5rem
+
+                a
+                    font-size: 1.2rem
+
+    .fa-bars
+        display: none
+        color: variables.$light-color
+        font-size: 2rem
+
+        @include mixins.mobile
+            display: block
+
+
+
+.banner
+    height: 800px
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("../img/office.jpg")
+    background-position: center
+    background-size: cover
+    @include mixins.flex($d: column)
+    margin-bottom: 5rem
+    width: 100%
+    
+
+    h1,span
+        color: variables.$light-color
+        display: block
+        margin: 1rem 0
+        font-weight: bold
+        text-shadow: #000 5px 5px 5px
+
+    h1
+        font-size: 3rem
+        text-align: center
+
+    span
+        font-size: 4rem
+
+
+
+    
+
+
+
+

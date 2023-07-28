@@ -1,0 +1,130 @@
+.top-navbar__link {
+  font-weight: bold;
+  position: relative;
+  color: var(--color);
+}
+.top-navbar__link:not(#nav-link-1):hover::before {
+  width: 40px;
+  height: 4px;
+  background-color: var(--color);
+  left: 50%;
+  transform: translateX(-50%);
+  top: -.5rem;
+}
+#nav-link-1 {
+  --color: var(--top-nav-1);
+}
+#nav-link-1:hover {
+  opacity: .7;
+}
+#nav-link-2 {
+  --color: var(--primary-color);
+}
+#nav-link-3 {
+  --color: var(--top-nav-2);
+}
+#nav-link-4 {
+  --color: var(--top-nav-3);
+}
+#nav-link-5 {
+  --color: var(--top-nav-4);
+}
+#nav-link-6 {
+  --color: var(--top-nav-5);
+}
+.link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.link--hover:hover {
+  color: var(--primary-dark);
+}
+.link--normal {
+  font-weight: normal;
+}
+.link--underline:hover {
+  text-decoration: underline;
+}
+.link--full::before {
+  bottom: 0;
+  right: 0;
+}
+.link--white {
+  color: white;
+}
+.link--md-sm {
+  margin-bottom: .5rem;
+  font-size: .85rem;
+}
+.link--md-lg {
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-bottom: .8rem;
+}
+@media(min-width: 768px) {
+  .link--md-lg {
+    font-size: 1.6rem;
+  }
+}
+.link--xl {
+  font-size: 1.8rem;;
+}
+.link--lg::before {
+  bottom: 0;
+  right: 60%;
+}
+.videolink-::before {
+    width: 100%;
+    height: 10rem;
+}
+.new-list__link {
+  font-size: .9rem;
+  color: var(--primary-dark);
+}
+.new-list__link:hover {
+  text-decoration: underline;
+}
+.carousel__link {
+  position: absolute;
+  bottom: -0.05rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: .95rem;
+  padding: .5rem;
+  background-size: 100% 25%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom,transparent, rgba(0,0,0,.8));
+}
+.weather__climatempo-link img {
+  width: 6rem;
+}
+.aside__see-more-link {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: .85rem;
+}
+.aside__see-more-link i {
+  margin-left: .5rem;
+}
+.--see-more-btop {
+  border-top: 1px solid #ddd;
+}
+.aside-thumb__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,.8);
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}

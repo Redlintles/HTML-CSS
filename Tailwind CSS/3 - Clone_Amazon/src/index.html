@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Amazon</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- Favicon -->
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/amazon.ico" type="image/x-icon">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <!-- Upper Header -->
+      <div class="header-top">
+        <div class="hti-container">
+          <i class="fas fa-bars text-2xl"></i>
+        </div>
+        <div class="htb-container">
+          <img src="img/amazon_logo.png" alt="Amazon">
+          <span>.com.br</span>
+        </div>
+        <div class="htf-container">
+          <form action="" class="htf-form">
+            <select name="" id="" class="htf-select">
+              <option value="" selected>Livros</option>
+              <option value="" selected>Eletrônicos</option>
+            </select>
+            <input type="text" name="" id="" class="htf-input">
+            <button class="htf-submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div class="hts-container">
+          <p>Olá, Faça seu login</p>
+          <p>Contas e Listas <i class="fas fa-chevron-down"></i></p>
+        </div>
+        <div class="hts-container m-0">
+          <p>Devoluções</p>
+          <p>e pedidos</p>
+        </div>
+        <div class="hts-container m-0">
+          <p>Experimente</p>
+          <p>Prime <i class="fas fa-chevron-down"></i></p>
+        </div>
+        <div class="htc-container">
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+          <span>Carrinho</span>
+        </div>
+      </div>
+      <!-- Middle Header -->
+      <div class="middle-header-container">
+        <div class="mhi-container">
+          <div class="mhi-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="mhi-text">
+            <p></p>
+            <p>Selecione o endereço</p>
+          </div>
+        </div>
+        <div class="mhl-container">
+          <nav>
+            <ul class="mhl-list">
+              <li class="mhl-item"><a href="#">Mais Vendidos</a></li>
+              <li class="mhl-item"><a href="#">Livros</a></li>
+              <li class="mhl-item"><a href="#">Ofertas do Dia</a></li>
+              <li class="mhl-item"><a href="#">Atendimento ao Cliente</a></li>
+              <li class="mhl-item"><a href="#">Eletrônicos</a></li>
+              <li class="mhl-item"><a href="#">Ídeias para Presente</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Bottom Header -->
+      <div class="bottom-header-container">
+        <a href="#" class="btc-department">
+          <i class="fas fa-chevron-left"></i> Todos Os departamentos
+        </a>
+        <ul class="btc-list">
+          <li class="btc-list-item">
+            <a href="#">Livros</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Pesquisa avançada</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Mais vendidos</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Pré-venda e Lançamentos</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Livros em Ofertas</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Inglês e outras Línguas</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Loja Geek</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Universitários e Acadêmicos</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Didáticos e Escolares</a>
+          </li>
+          <li class="btc-list-item">
+            <a href="#">Loja Infantil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="grid grid-cols-6">
+      <!-- Aside Esquerda -->
+      <aside>
+        <div class="aside-container">
+          <h3 class="aside-title">Destaque em livros</h3>
+          <ul class="aside-list">
+            <li class="aside-list-item">
+              <a href="#">Indicações Amazon</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Inglês e outras Línguas</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Livros em oferta</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Mais Vendidos do Mês</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Pré-venda e Lançamentos</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Livros Exclusivos Amazon</a>
+            </li>
+          </ul>
+          <h3 class="aside-title">Páginas Especiais</h3>
+          <ul class="aside-list">
+            <li class="aside-list-item">
+              <a href="#">Livros Clássicos</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Livros que Viraram Filmes</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Livros Infantis</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Loja Geek</a>
+            </li>
+          </ul>
+          <h3 class="aside-title">Luvros Educacionais</h3>
+          <ul class="aside-list">
+            <li class="aside-list-item">
+              <a href="#">Didáticos e Escolares</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Estudo e Ensino de Idiomas</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Exames e Concursos</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Importados para Exames</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Universitários e Acadêmicos</a>
+            </li>
+          </ul>
+          <h3 class="aside-title">Kindle</h3>
+          <ul class="aside-list">
+            <li class="aside-list-item">
+              <a href="#">Acessórios Kindle</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Comprar Kindle</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">E-books em Inglês</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">E-books em Oferta</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Kindle unlimited</a>
+            </li>
+            <li class="aside-list-item">
+              <a href="#">Todos os E-books</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- Conteúdo do Site -->
+      <div class="main-container-cell">
+        <div class="main-container">
+          <!-- Títulos e Categorias -->
+          <div class="tc-container">
+            <h2 class="tc-title">Loja de Livros</h2>
+            <ul class="tc-list">
+              <li>
+                <a href="#" class="tc-link">Livros em Oferta</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link">Importados</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link">Lançamentos</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link">Universitários</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link">Didáticos e Escolares</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link">HQs e Mangás</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link">Mais Vendidos</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link">Livros Infantis</a>
+              </li>
+              <li>
+                <a href="#" class="tc-link border-none">Indicações</a>
+              </li>
+            </ul>
+            <div class="h-2 border-b shadow"></div>
+          </div>
+          <!-- Promoções E Categorias -->
+          <div class="main-banner">
+            <img src="img/banner_promo.jpg" alt="Promoções">
+          </div>
+          <!-- Amazon Prime -->
+          <div class="ps-container">
+            <p class="ps-text">Assine o Amazon Prime para ter benefícios de leitura com o Prime Reading, frete GRÁTIS sem valor mínimo de compra e muito mais, Apenas R$9,90/mês</p>
+            <a href="#" class="ps-btn">Teste GRÁTIS por 30 dias</a>
+          </div>
+          <!-- Categorias -->
+          <div class="cat-container">
+            <h3 class="cat-title">Encontre ofertas por categoria</h3>
+            <ul class="cat-list">
+              <li class="cat-list-item">
+                <img src="img/cat1.jpg" alt="Todas as ofertas" class="cat-img">
+                <a href="#">Todas as ofertas</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat2.jpg" alt="Ofertas Relâmpago" class="cat-img">
+                <a href="#">Ofertas Relâmpago</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat3.jpg" alt="Literatura" class="cat-img">
+                <a href="#">Literatura</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat4.jpg" alt="HQs e Mangás" class="cat-img">
+                <a href="#">HQs e Mangás</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat5.jpg" alt="Ficção" class="cat-img">
+                <a href="#">Ficção</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat6.jpg" alt="Ingês e Outras Línguas" class="cat-img">
+                <a href="#">Ingês e Outras Línguas</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat7.jpg" alt="Autoajuda" class="cat-img">
+                <a href="#">Autoajuda</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat8.jpg" alt="Infantil" class="cat-img">
+                <a href="#">Infantil</a>
+              </li>
+              <li class="cat-list-item">
+                <img src="img/cat9.jpg" alt="Negócios" class="cat-img">
+                <a href="#">Negócios</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Catálogo de Produtos -->
+          <div class="pgrid-container">
+            <!-- Filtro -->
+            <div class="filter-container">
+              <p>Mostrando 1-32 de 122 Resultados</p>
+              <div class="ob-container">
+                <span>Ordenar por:</span>
+                <select name="" id="" class="ob-select">
+                  <option value="Books" selected>Livros</option>
+                  <option value="Console">Videogames</option>
+                </select>
+              </div>
+            </div>
+            <!-- Catalogo -->
+            <div class="products-grid">
+              <div class="product">
+                <img src="img/livro1.jpg" alt="" class="product-img">
+                <p class="product-price">RS 26,30</p>
+                <p class="product-discount">De:<span class="line-through">RS 40,30</span> 58% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">Em busca do sentido</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+              <div class="product">
+                <img src="img/livro2.jpg" alt="" class="product-img">
+                <p class="product-price">RS 17,40</p>
+                <p class="product-discount">De:<span class="line-through">RS 26,30</span> 40% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">Não se Humilhe Não</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+              <div class="product">
+                <img src="img/livro3.jpg" alt="" class="product-img">
+                <p class="product-price">RS 32,25</p>
+                <p class="product-discount">De:<span class="line-through">RS 62,50</span> 50% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">As Seis Lições</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+              <div class="product">
+                <img src="img/livro4.jpg" alt="" class="product-img">
+                <p class="product-price">RS 12,26</p>
+                <p class="product-discount">De:<span class="line-through">RS 14,50</span> 10% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">Anne Windy Poplars</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+              <div class="product">
+                <img src="img/livro5.jpg" alt="" class="product-img">
+                <p class="product-price">RS 24,19</p>
+                <p class="product-discount">De:<span class="line-through">RS 28,30</span> 7% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">Propósito - A Coragem de ser quem somos</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+              <div class="product">
+                <img src="img/livro6.jpg" alt="" class="product-img">
+                <p class="product-price">RS 50,24</p>
+                <p class="product-discount">De:<span class="line-through">RS 90,30</span> 48% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">A Morte de Ivan Ilictch</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+              <div class="product">
+                <img src="img/livro7.jpg" alt="" class="product-img">
+                <p class="product-price">RS 75,22</p>
+                <p class="product-discount">De:<span class="line-through">RS 35,13</span> 55% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">Outros Jeitos de usar a boca</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+              <div class="product">
+                <img src="img/livro8.jpg" alt="" class="product-img">
+                <p class="product-price">RS 33,20</p>
+                <p class="product-discount">De:<span class="line-through">RS 66,50</span> 51% off</p>
+                <p class="product-timer">Termina em 2:09:46</p>
+                <a href="#" class="product-name">Antífrágil</a>
+                <p class="product-prime-only">Esta oferta é exclusiva para membros do <a href="#" class="product-prime-only-link">Amazon Prime</a></p>
+                <button class="product-btn">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-container">
+      <!-- Upper-footer(To Top)-->
+      <div class="footer-to-top">
+        <p>Voltar ao ínicio</p>
+      </div>
+      <!-- Upper footer -->
+      <div class="upper-footer">
+        <div class="ufl-container">
+          <h4 class="ufl-title">Conheça-nos</h4>
+          <ul class="ufl-list">
+            <li class="ufl-list-item">
+              <a href="#">Informações Corporativas</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Carreiras</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Comunicados à imprensa</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Comunidade</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ufl-container">
+          <h4 class="ufl-title">Ganhe dinheiro conosco</h4>
+          <ul class="ufl-list">
+            <li class="ufl-list-item">
+              <a href="#">Publique seus livros</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Seja um associado</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Venda na Amazon</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ufl-container">
+          <h4 class="ufl-title">Conheça-nos</h4>
+          <ul class="ufl-list">
+            <li class="ufl-list-item">
+              <a href="#">Sua conta</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Frete e prazo de entrega</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Devoluções e reembolsos</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Gerencie seu contéudo e dispositivos</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ufl-container">
+          <h4 class="ufl-title">Pagamentos</h4>
+          <ul class="ufl-list">
+            <li class="ufl-list-item">
+              <a href="#">Amazon e COVID-19</a>
+            </li>
+            <li class="ufl-list-item">
+              <a href="#">Cartões de crédito e boleto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Middle Footer -->
+      <div class="middle-footer">
+        <img src="img/amazon_logo.png" alt="" class="w-20">
+        <ul class="mf-country-list">
+          <li class="mf-country-list-item">
+            <a href="#">Áustrália</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Alemanha</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">África do Sul</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Canadá</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">China</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Cingapura</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Espanha</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Estados Unidos</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">França</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Holanda</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Índia</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Itália</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Japão</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">México</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Portugal</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Rússia</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Emirados Árabes Unidos</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Reino Unido</a>
+          </li>
+          <li class="mf-country-list-item">
+            <a href="#">Turquia</a>
+          </li>
+        </ul>
+        <div class="dont-forget">
+          <span class="dont-forget-text">E Não se Esqueça</span>
+          <a href="#">Amazon Web Services</a>
+        </div>
+      </div>
+      <!-- Bottom Footer -->
+      <div class="bottom-footer">
+        <div class="bfl-container">
+          <ul class="bfl-list">
+            <li class="bfl-list-item">
+              <a href="#">Condições de Uso</a>
+            </li>
+            <li class="bfl-list-item">
+              <a href="#">Notificação de Privacidade</a>
+            </li>
+            <li class="bfl-list-item">
+              <a href="#">Cookies</a>
+            </li>
+            <li class="bfl-list-item">
+              <a href="#">Anúncios Baseados em Interesses</a>
+            </li>
+          </ul>
+          <span class="bfl-text">&copy; Amazon.com, Inc. ou suas afiliadas</span>
+        </div>
+        <p class="bottom-footer-text">Amazon Serviços de Varejo do Brasil Ltda | CNPJ 15.436.940/0001-03</p>
+        <p class="bottom-footer-text">Avenida Juscelino Kubischeck, 2041, Torre E, 18° andar - São Paulo <a href="#">Fale Conosco</a></p>
+        <p class="bottom-footer-text">Formas de pagamento aceitas: cartões de rédito(Visa,Mastercard, Elo e American Express) e boleto.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

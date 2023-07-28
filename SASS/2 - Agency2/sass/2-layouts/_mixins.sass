@@ -1,0 +1,11 @@
+@mixin flex($d: row,$jc: center,$ai: center, $w: nowrap)
+    display: flex
+    flex-direction: $d
+    justify-content: $jc
+    align-items: $ai
+    flex-wrap: $w
+
+@mixin mobile
+    @media (max-width: 425px)
+        @content
+

@@ -1,0 +1,119 @@
+@media(min-width: 1200px) {
+  .header-container {
+    flex-direction: row;
+  }
+  .header-left-container {
+    width: auto;
+    flex-grow: 2;
+    padding: 0;
+  }
+  .header-links-container {
+    width: auto;
+    flex-grow: 1;
+    margin-left: 1rem;
+    position: relative;
+  }
+  .hc-platforms-container > .hc-text-sm {
+    display: block;
+  }
+  .hc-platforms-container .hc-list {
+    flex-direction: column;
+    padding-right: 1rem;
+    align-items: flex-start;
+  }
+  .hc-text-sm {
+    font-size: .7rem;
+  }
+  .hc-list .hc-text-sm {
+    display: none;
+  }
+  .hc-platforms-container .hc-list li {
+    margin: 0 0 .5rem;
+  }
+  .header-logo-container {
+    flex-grow: 2;
+  }
+  .header-logo-container:first-child {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-logo-container:last-child {
+    height: 2rem;
+  }
+  .form-container {
+    flex-grow: 3;
+  }
+  .header-left-container > .htc-btn {
+    display: none
+  }
+  .header-links-container .htc-btn {
+    display: inline-block;
+  }
+  .bottom-bar-anime {
+    bottom: -.2rem;
+    left: 1rem;
+  }
+  #htc-movies:hover ~ .bottom-bar-anime {
+    left: 7rem;
+  }
+  #htc-tv:hover ~ .bottom-bar-anime {
+    left: 12.2rem;
+  }
+  #htc-music:hover ~ .bottom-bar-anime {
+    left: 17.1rem;
+  }
+  .htc-hover-container {
+    flex-direction: row;
+    min-width: 600px;
+    top: 3.15rem;
+    left: -20rem;
+    height: 400px;
+    width: auto;
+  }
+  .htc-hover-container > div:first-child {
+    display: flex;
+  }
+  .hc-platforms-container {
+    padding: 0 1.5rem;
+    width: auto;
+    flex-grow: 1;
+    border: none;
+    border-right: 1px solid white;
+    margin: 0;
+    align-items: flex-start;
+    overflow: visible;
+  }
+  .hc-media-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: .5rem;
+    row-gap: 1rem;
+  }
+  .hc-img-container {
+    order: -1;
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .hc-img-container div {
+    white-space: normal;
+    width: auto;
+  }
+  .hc-img-container img{
+    order: -1;
+    margin: 0;
+    width: 10rem;
+    height: auto;
+  }
+  .hc-media-img + img {
+    position: absolute;
+    width: 2.5rem;
+    right: .3rem;
+    top: .3rem;
+  }
+  .hc-media-img + div {
+    position: absolute;
+    right: .3rem;
+    top: 0;
+  }
+}

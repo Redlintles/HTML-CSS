@@ -1,0 +1,79 @@
+.us-new-review {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+.nr-top {
+  background-color: #444;
+  color: white;
+  text-transform: uppercase;
+  padding: .3rem .5rem;
+  font-size: .8rem;
+  font-weight: bolder;
+}
+.nr-main {
+  padding: .5rem;
+  background-color: #f1f1f1;
+}
+.nr-main .rate-bar {
+  pointer-events: none;
+}
+.nrm-text {
+  background-color: white;
+  height: 8rem;
+  border: 1px solid #ccc;
+  padding: .5rem;
+}
+.nrm-text p {
+  font-size: .6rem;
+}
+.nr-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: .5rem;
+}
+.nrf-left {
+  display: flex;
+  align-items: center;
+}
+.nrf-left label {
+  font-size: .5rem;
+  color: #888;
+  margin-right: .5rem;
+}
+#check-spoiler {
+  width: .6rem;
+  height: .6rem;
+  pointer-events: none;
+}
+.nrf-right button {
+  pointer-events: none;
+  color: white;
+  padding: .3rem .5rem;
+  font-size: .5rem;
+  background: linear-gradient(to bottom, #777, #444);
+  border-radius: 5px;
+}
+.us-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 1rem .5rem;
+}
+.change-page {
+  display: flex;
+}
+.usf-left {
+  display: flex;
+  align-items: center;
+}
+.usf-left span {
+  font-weight: bold;
+  font-size: .6rem;
+  margin-right: .3rem;
+}
+.usf-right {
+  display: flex;
+}

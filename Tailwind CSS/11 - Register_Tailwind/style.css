@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-main-white
+  }
+}
+
+@layer components {
+  .main-container-grid {
+    @apply grid grid-cols-1 w-11/12 shadow-xl bg-white mx-auto rounded-3xl px-5 py-10 justify-items-center items-center mt-20 gap-10
+  }
+  .form-container {
+    @apply w-full order-1 
+  }
+  .fc-form {
+    @apply p-5
+  }
+  .fc-title {
+    @apply font-extrabold text-black text-2xl text-center
+  }
+  .floating-label {
+    @apply flex flex-col my-5 relative
+  }
+  .floating-label input {
+    @apply h-16 border-b p-1 border-gray-400 outline-none transition-all duration-500
+  }
+  .floating-label label {
+    @apply text-gray-300 pointer-events-none text-sm absolute top-6 pl-5 transition-all duration-500
+  }
+  .floating-label input:focus+label {
+    @apply text-xs text-black top-1 pl-1
+  }
+  .form-btn {
+    @apply bg-main-purple px-4 py-2 text-white mt-2 rounded-md
+  }
+  .img-container {
+    @apply flex flex-col justify-center items-center h-full order-2
+  }
+  .img-container img {
+    @apply w-full h-full
+  }
+  .img-link {
+    @apply mt-5
+  }
+  .form-checkbox input{
+    @apply appearance-none border border-black rounded-sm checked:bg-[url("../img/check-lg.svg")] checked:bg-main-purple mr-2 w-4 h-4 bg-cover bg-center
+  }
+  .main-link {
+    @apply text-sm underline hover:text-main-purple transition duration-500
+  }
+  .register-form {
+    @apply order-1
+  }
+}
+
+@screen md {
+  .main-container-grid {
+    @apply grid-cols-2 w-9/12 px-10
+  }
+  .form-container {
+    @apply order-2
+  }
+  .img-container {
+    @apply order-1
+  }
+}

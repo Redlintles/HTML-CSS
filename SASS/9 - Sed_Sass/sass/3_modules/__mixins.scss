@@ -1,0 +1,11 @@
+@mixin media450 {
+  @media only screen and (max-device-width: 450px) {
+    @content;
+  }
+}
+
+@mixin media800 {
+  @media only screen and (max-device-width: 800px) {
+    @content;
+  }
+}

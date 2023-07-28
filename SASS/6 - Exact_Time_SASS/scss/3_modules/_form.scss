@@ -1,0 +1,41 @@
+@use "../1_base/variables";
+@use "./mixins";
+
+
+.main-form{
+  height: auto;
+  border: 1px solid variables.$secondary-color;
+  display: flex;
+  padding: .5rem 0;
+  justify-content: center;
+  align-items: center;
+
+
+  > * {
+    margin: 0 .5rem;
+  }
+
+
+  i {
+    color: variables.$primary-color;
+  }
+
+  input {
+    background-color: transparent;
+    height: 2rem;
+    width: 70%;
+
+    &::placeholder {
+      color: variables.$light-color;
+    }
+  }
+}
+
+#newsletter form {
+  width: 85%;
+
+  @include mixins.media {
+    width: 30%;
+  }
+  
+}

@@ -1,0 +1,69 @@
+@use "./mixins";
+@use "../1_base/variables";
+
+.text-input {
+  width: 100%;
+  font-size: 16px;
+  color: variables.$form-data-color;
+  outline : none;
+  padding: 1rem;
+  margin-left: -1rem;
+  border: none;
+  border-bottom: 1px solid variables.$form-main-color;
+
+  @include mixins.media {
+    margin-left: 0;
+  }
+}
+
+.label-float {
+  position: relative;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  .floating-label {
+    position: absolute;
+    color: variables.$form-main-color;
+    transition: .5s;
+    top:30%;
+    padding-left: 1rem;
+    pointer-events: none;
+    font-size: 1.2rem;
+  }
+
+  input:focus + .floating-label {
+    top: 2%;
+    padding-left: .3rem;
+    font-size: .8rem;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.form-check {
+  margin: 1rem 0;
+  position: relative;
+
+  
+  &-box {
+    all: unset;
+    border: 1px solid variables.$checkbox-border;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    background-position: center;
+
+
+    &:checked {
+      background-color: variables.$primary-color;
+      background-image: variables.$checkbox-checked-img;
+    }
+
+  }
+}
+
+

@@ -1,0 +1,47 @@
+@mixin flex($jc:start,$ai:start,$d:row,$w:nowrap) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  flex-direction:$d;
+  flex-wrap: $w;
+}
+
+
+@mixin hover($color: #C1B696,$td:none,$duration:.5s,$border: none) {
+  transition: $duration;
+
+  &:hover {
+    color: $color;
+    text-decoration: $td;
+    border: $border;
+  }
+}
+
+@mixin background($bi: none,$bs:cover,$bp:center,$br:no-repeat) {
+  background-image: $bi;
+  background-position: $bp;
+  background-repeat: $br;
+  background-size: $bs;
+}
+
+
+@mixin button($p:10px 20px, $color:#fff,$bg:#000,$t:.5s,$abg:#222,$acolor:#fff,$border:none,$aborder:none) {
+  padding: $p;
+  color: $color;
+  background-color: $bg;
+  transition: .5s;
+  margin: .5rem 0;
+  border: none;
+
+  &:hover {
+    background-color: $abg;
+    color: $acolor;
+    cursor: pointer;
+  }
+}
+
+@mixin media($resolution:768px) {
+  @media (min-width: $resolution) {
+    @content;
+  }
+}

@@ -1,0 +1,99 @@
+#overview-wrapper {
+  padding: 0 2rem;
+  font-size: .8rem;
+}
+.overview-container {
+  max-height: 55vh;
+  overflow-y: hidden;
+}
+#over-show-label i {
+  transition: transform .4s;
+}
+#over-show-label::before {
+  content: "Mostrar Mais";
+  margin-right: .3rem;
+}
+.ow-top {
+  padding: 1rem 0 2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.ow-top h1 {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+.ow-section {
+  display: grid;
+  padding: 1.5rem 0;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.ow-section ul {
+  list-style: disc;
+}
+.ow-section:last-of-type {
+  border-bottom: none;
+}
+.ow-section:first-child {
+  grid-column: 1 / span 1;
+}
+.ow-text {
+  grid-column: span 2;
+}
+.ow-section p {
+  font-size: .75rem;
+  line-height: 1.5;
+  letter-spacing: .25px;
+  font-weight: 500;
+}
+.ow-text p {
+  margin: .5rem 0;
+}
+.ow-text b {
+  font-size: .8rem;
+}
+.ow-text ul {
+  padding-left: 2rem;
+}
+.owt-media {
+  margin: 1rem 0;
+  display: flex;
+}
+.owt-media a {
+  color: white;
+  background-color: #666;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 .2rem;
+  font-size: .9rem;
+}
+.owt-media a:hover {
+  background-color: black;
+}
+#overview-wrapper button {
+  width: 25%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.mq-purple {
+  color: var(--main-purple);
+  font-size: .7rem;
+  font-weight: bold;
+}
+#overview-wrapper button i {
+  margin-left: .3rem;
+  margin-top: .2rem;
+}
+
+@media (min-width: 768px) {
+  .ow-section {
+    grid-template-columns: repeat(4,1fr);
+  }
+}

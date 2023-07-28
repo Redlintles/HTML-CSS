@@ -1,0 +1,30 @@
+@use "../3_modules/mixins";
+
+#footer-container {
+  padding: 2rem 0;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+  
+  .row {
+    @include mixins.flex($d:column,$jc:center,$ai:center);
+
+    > * {
+      @include mixins.flex($jc:center,$ai:center);
+      margin: 1rem 0;
+    }
+
+    #links-container {
+      
+      a {
+        margin: 0 1.5rem;
+        color: #555;
+        font-size: 1.5rem;
+        transition: .5s;
+
+        &:hover {
+          color: #C1B696;
+        }
+      }
+    }
+  }
+}

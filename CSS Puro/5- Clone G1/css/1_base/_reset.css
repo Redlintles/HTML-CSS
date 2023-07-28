@@ -1,0 +1,39 @@
+* {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--main-bg);
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: inherit
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 1rem;
+}
+*:not(i)::before,*:not(i)::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}

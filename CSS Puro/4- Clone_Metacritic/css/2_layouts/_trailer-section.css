@@ -1,0 +1,10 @@
+.ts-video img{
+  width: 100%;
+  height: 20rem;
+}
+.ts-main p{
+  font-size: .7rem;
+}
+.ts-main span {
+  font-weight: bold;
+}

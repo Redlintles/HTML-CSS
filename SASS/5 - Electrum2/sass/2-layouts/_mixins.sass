@@ -1,0 +1,32 @@
+@use "../1-base/variables"
+    
+@mixin center
+    max-width: variables.$container-width
+    display: flex
+    justify-content: center
+    margin: 0 auto
+
+@mixin flex($jc: center,$ai: center, $d: row, $w: nowrap)
+    display: flex
+    justify-content: $jc
+    align-items: $ai
+    flex-direction: $d
+    flex-wrap: $w
+
+@mixin hover($u:1)
+    transition: .5s
+
+    &:hover
+        color: variables.$primary-color
+        cursor: pointer
+
+        @if $u==1
+            text-decoration: underline
+
+@mixin font($s: 1rem,$w: normal,)
+    font-size: $s
+    font-weight: $w
+
+@mixin mobile
+    @media (max-width:425px)
+        @content

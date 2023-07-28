@@ -1,0 +1,145 @@
+@use "../1_base/variables";
+@use "sass:color";
+@use "../3_modules/_mixins";
+.form-container {
+  display: flex;
+  background-color: variables.$main-blue;
+  padding: 1rem;
+  width: 97.5vw;
+  margin: 0 auto;
+  height: 310px;
+
+  @include mixins.media800 {
+    flex-direction: column;
+    height: auto;
+  }
+
+
+  &__left {
+    margin-top: 1.8rem;
+    flex: 3 1 0;
+
+    @include mixins.media450 {
+      margin-top: 0;
+      flex: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.1rem;
+    color: white;
+    width: 50%;
+    margin-bottom: 1rem;
+
+    @include mixins.media450 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      width: auto;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  &__text {
+    font-size: .9rem;
+    color: white;
+
+    @include mixins.media800 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__right {
+    flex: 2 1 0;
+    padding-left: 2rem;
+    @include mixins.media800 {
+      padding: 0;
+      flex: 1;
+      width: 100%;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: .7rem;
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      align-items: center;
+
+      .btn {
+        background-color: variables.$main-red;
+        border: none;
+        padding: .7rem 1.5rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: .7rem;
+      }
+    }
+
+    &__forget {
+      font-size: .6rem;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__label {
+    color: white;
+    font-size: .65rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: .3rem;
+  }
+
+  &__input {
+    height: 2.7rem;
+    margin-bottom: 1.4rem;
+    background-color: #ffefff;
+    padding-left: .5rem;
+    color: black;
+    font-weight: bold;
+
+    &::placeholder {
+      font-style: italic;
+      font-weight: bold;
+      color: #aaa;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    font-size: .6rem;
+    padding-bottom: 1.5rem;
+
+    .form-container__text {
+      font-size: .7rem !important;
+    }
+
+    a {
+      margin-top: .3rem;
+      font-size: .7rem;
+    }
+  }
+}

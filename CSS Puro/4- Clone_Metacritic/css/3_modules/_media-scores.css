@@ -1,0 +1,23 @@
+.media-scores,
+.ms-score {
+  display: flex;
+}
+.ms-score:first-of-type {
+  margin-right: 1rem;
+}
+.ms-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: .5rem;
+  justify-content: center;
+}
+.ms-text h6 {
+  font-size: .7rem;
+  font-weight: bolder;
+}
+.ms-text p {
+  font-size: .6rem;
+}
+#trailer-section .ms-score:first-of-type {
+  margin-right: 5rem;
+}

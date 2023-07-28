@@ -1,0 +1,10 @@
+@use "../3_modules/mixins";
+
+#register-img-container {
+  @include mixins.flex($jc:center, $ai:center,  $d:column);
+  margin-top: 3rem;
+
+  @include mixins.media {
+    margin: 0;
+  }
+}

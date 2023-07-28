@@ -1,0 +1,131 @@
+.top-navbar {
+  padding: .5rem .3rem;
+  display: none;
+  justify-content: space-between;
+}
+.top-nav--bg {
+  background-color: var(--top-nav-bg);
+}
+.top-navbar__list > li {
+  margin: 0 .5rem;
+}
+.top-navbar__account {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav__call {
+  margin-right: .5rem;
+}
+.call--style {
+  text-transform: uppercase;
+  opacity: .7;
+  color: black;
+  font-weight: light;
+  font-size: .8rem;
+  transition: .5s;
+}
+.call--style:hover {
+  color: var(--top-nav-5)
+}
+.top-nav__login-btn {
+  padding: .2rem;
+  cursor: pointer;
+}
+.login-btn--bg {
+  transition: background-position .5s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #aaa);
+  background-color: transparent;
+  background-size: 100% 120%;
+  background-position: top left;
+}
+.login-btn--bg:hover {
+  background-position: left 50%;
+}
+.login-btn--skin {
+  border-radius: 5px;
+  color: #888;
+  font-weight: light;
+  border: 1px solid #bbb;
+  text-transform: uppercase;
+}
+/* Main Navbar */
+
+.main-navbar {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem .5rem;
+}
+.main-navbar--style {
+  background-color: var(--primary-color);
+}
+.main-navbar__menu {
+  color: white;
+}
+.menu__text {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none;
+}
+.menu__icon {
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+.main-navbar__logo {
+  width: 30px;
+  justify-self: center
+}
+.main-navbar__search-form {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+.main-navbar__search-form,
+.search-form__input {
+  background-color: transparent;
+}
+.search-form__icon {
+  color: white;
+  font-size: 1.05rem;
+  margin-right: .5rem;
+}
+.search-form__input { 
+  display: none;
+  width: 90%;
+}
+.input--style {
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+.input--placeholder::placeholder {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: .9rem;
+}
+@media(min-width: 768px) {
+  .top-navbar {
+    display: flex;
+  }
+  .menu__text {
+    display: block;
+  }
+  .main-navbar__logo {
+    width: 42px;
+  }
+  .main-navbar__search-form {
+    background-color: var(--primary-dark);
+    padding: .4rem;
+  }
+  .search-form__icon {
+    width: 100%;
+  }
+  .search-form__input {
+    display: block;
+    width: 10.4rem;
+  }
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exact_Time_Tailwind</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- Google fonts(Montserrat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <section id="header-top">
+      <div class="header-brand">
+        <h1>ExactTime</h1>
+      </div>
+      <div class="header-form">
+        <form action="" class="main-form">
+          <i class="bi bi-search"></i>
+          <input class="main-form-input" type="text" name="" id="" placeholder="Busque o seu relógio...">
+          <button type="submit" class="btn btn-form">Pesquisar</button>
+        </form>
+      </div>
+      <div class="header-user">
+        <div class="icon-container">
+          <i class="bi bi-person"></i>
+        </div>
+        <div class="icon-container">
+          <i class="bi bi-heart"></i>
+          <span class="icon-label">5</span>
+        </div>
+        <div class="icon-container">
+          <i class="bi bi-bag"></i>
+          <span class="icon-label" id="count-label">8</span>
+          <span class="icon-count">R$ 1290,12</span>
+        </div>
+      </div>
+    </section>
+    <section id="header-bottom">
+      <nav>
+        <ul class="hb-list">
+          <li class="hb-list-item"><a href="#" class="hb-link">Home</a></li>
+          <li class="hb-list-item"><a href="#" class="hb-link">Produtos</a></li>
+          <li class="hb-list-item"><a href="#" class="hb-link">Promoções</a></li>
+          <li class="hb-list-item"><a href="#" class="hb-link">Blogs</a></li>
+          <li class="hb-list-item"><a href="#" class="hb-link">Contato</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section id="carousel-container">
+      <input type="radio" name="carousel" id="slide1" class="carousel-input" checked>
+      <input type="radio" name="carousel" id="slide2" class="carousel-input">
+      <input type="radio" name="carousel" id="slide3" class="carousel-input">
+      <input type="radio" name="carousel" id="slide4" class="carousel-input">
+
+      <div class="carousel-slides">
+        <div class="carousel-overflow">
+          <div class="carousel-inner">
+            <div class="carousel-item" id="item1">
+  
+              <div class="carousel-caption">
+                <h2 class="cc-title">Linha Importada</h2>
+                <p class="cc-text">Conheça os melhores relógios suíços, com pronta entrega</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="item2">
+  
+              <div class="carousel-caption">
+                <h2 class="cc-title">Relógios de Luxo</h2>
+                <p class="cc-text">Para você estar pronto em qualquer situação</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="item3">
+  
+              <div class="carousel-caption">
+                <h2 class="cc-title">Temos smart-watches personalizados</h2>
+                <p class="cc-text">Relógios diferentes para pessoas diferentes</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="item4">
+  
+              <div class="carousel-caption">
+                <h2 class="cc-title">Entregamos em qualquer lugar do mundo</h2>
+                <p class="cc-text">Levamos nossa pontualidade até você</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label class="carousel-control" for="slide1" id="label1"></label>
+      <label class="carousel-control" for="slide2" id="label2"></label>
+      <label class="carousel-control" for="slide3" id="label3"></label>
+      <label class="carousel-control" for="slide4" id="label4"></label>
+    </section>
+    <section id="banners-container">
+      <div class="banner" id="banner1">
+        <h3 class="banner-heading">Nova Coleção</h3>
+        <a href="#" class="banner-link">Comprar Agora</a>
+      </div>
+      <div class="banner" id="banner2">
+        <h3 class="banner-heading">Promoções</h3>
+        <a href="#" class="banner-link">Comprar Agora</a>
+      </div>
+      <div class="banner" id="banner3">
+        <h3 class="banner-heading">Edição Limitada</h3>
+        <a href="#" class="banner-link">Comprar Agora</a>
+      </div>
+    </section>
+    <section id="best-sellers">
+      <h2 class="section-title">Best Sellers</h2>
+      <div class="bs-grid">
+        <div class="card">
+          <img src="./img/relogio1.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">R$ 177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio2.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">R$ 177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio7.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">R$ 177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio8.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">R$ 177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+      </div>
+    </section>
+    <section id="deal-watch">
+      <div class="deal-caption">
+        <span class="dc-discount">Desconto de até 75%</span>
+        <h2 class="dc-title">Relógio X</h2>
+        <p class="dc-text">Presenteie o seu amor com este luxuoso relógio</p>
+        <button class="btn dc-btn">Comprar Agora</button>
+      </div>
+    </section>
+    <section id="news-section">
+      <h2 class="section-title">Novidades</h2>
+      <div class="ng-grid">
+        <aside class="ng-banner">
+          <span class="ngb-best">Os melhores</span>
+          <h5 class="ngb-title">Relógios</h5>
+          <span class="ngb-price">pelos melhores preços</span>
+        </aside>
+        <div class="card">
+          <img src="./img/relogio1.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">RS177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio2.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">RS177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio3.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">RS177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio4.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">RS177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio5.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">RS177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+        <div class="card">
+          <img src="./img/relogio6.png" alt="" class="card-img">
+          <span class="p-category">Relógio</span>
+          <h4 class="p-title">Nome do Produto</h4>
+          <span class="p-price">RS177,65</span>
+          <button class="btn card-btn">Comprar</button>
+        </div>
+      </div> 
+    </section>
+  </main>
+  <footer>
+    <section id="gallery-grid">
+      <div class="gallery-item" id="gallery1"></div>
+      <div class="gallery-item" id="gallery2"></div>
+      <div class="gallery-item" id="gallery3"></div>
+      <div class="gallery-item" id="gallery4"></div>
+      <div class="gallery-item" id="gallery5"></div>
+      <div class="gallery-item" id="gallery6"></div>
+    </section>
+    <section id="footer-links">
+      <div class="fl-item">
+        <h6 class="fl-title">Páginas</h6>
+        <ul class="fl-list">
+          <li class="fl-list-item"><a href="#" class="fl-link">Home</a></li>
+          <li class="fl-list-item"><a href="#" class="fl-link">Categorias</a></li>
+          <li class="fl-list-item"><a href="#" class="fl-link">Promoções</a></li>
+          <li class="fl-list-item"><a href="#" class="fl-link">Contato</a></li>
+        </ul>
+      </div>
+      <div class="fl-item" id="middle-fl">
+        <h1 class="mfl-title">ExactTime</h1>
+        <span class="mfl-text">Alguma dúvida?Ligue Para nós!</span>
+        <span class="mfl-phone"><i class="bi bi-telephone"></i>(50) 99999-9999</span>
+      </div>
+      <div class="fl-item">
+        <h6 class="fl-title">Informações</h6>
+        <ul class="fl-list">
+          <li class="fl-list-item"><a href="#" class="fl-link">Política de Privacidade</a></li>
+          <li class="fl-list-item"><a href="#" class="fl-link">Política de Entregas</a></li>
+          <li class="fl-list-item"><a href="#" class="fl-link">Rastreie o seu pedido</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="footer-newsletter">
+      <span class="fn-call">Se inscreva na nossa newsletter:</span>
+      <div class="fn-form">
+        <form action="" class="main-form">
+          <i class="bi bi-envelope"></i>
+          <input type="email" name="" id="" class="main-form-input" placeholder="Digite o Seu Email...">
+          <button class="btn btn-form">Enviar</button>
+        </form>
+      </div>
+      <div class="fn-media">
+        <a href="#" class="fm-link"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="fm-link"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="fm-link"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="fm-link"><i class="bi bi-twitter"></i></a>
+      </div>
+    </section>
+    <section id="footer-copy">
+      <p>Todos os direitos reservados &copy;2021 <span>ExactTime</span> - A sua loja de relógios</p>
+    </section>
+  </footer>
+
+  
+</body>
+</html>

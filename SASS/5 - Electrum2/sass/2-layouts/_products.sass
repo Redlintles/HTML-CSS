@@ -1,0 +1,21 @@
+@use "../1-base/variables"
+@use "mixins"
+
+.products-grid
+    @include mixins.center
+    padding: 2rem 0
+    flex-direction: column
+    
+    &-container
+        @include mixins.flex(space-between)
+        padding: 2rem 0
+        width: 100%
+
+        @include mixins.mobile
+            flex-direction: column
+        
+    h2
+        font-size: 2rem
+
+        @include mixins.mobile
+            text-align: center

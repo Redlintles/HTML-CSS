@@ -1,0 +1,333 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  i {
+    @apply text-main-red
+  }
+}
+
+@screen md {
+  .hm-container {
+    @apply justify-between
+  }
+  .hm-brand h1, 
+  .hm-form-container,
+  .fi-item {
+    @apply mb-0
+
+  }
+  .hm-form {
+    @apply mx-32
+  }
+  #banners-grid {
+    @apply grid-cols-3 gap-x-10 gap-y-0 px-0
+  }
+  .products-grid {
+    @apply  grid-cols-4 gap-x-10 gap-y-0
+  }
+  .products-container {
+    @apply mx-auto
+  }
+  .section-title {
+    @apply text-left
+  }
+  #deal-headset {
+    @apply bg-deal-position h-96 flex-center bg-deal-size
+  }
+  .deal-caption {
+    @apply flex-center
+  }
+  .time-container {
+    @apply flex
+  }
+  .deal-title {
+    @apply text-xl
+  }
+  .deal-text {
+    @apply text-2xl
+  }
+  #nws-form {
+    @apply w-3/12 
+  }
+  .footer-container {
+    @apply grid-cols-2 gap-x-10 gap-y-0
+  }
+  .pl-list {
+    @apply pl-0
+  }
+  #footer-payments,#footer-copy {
+    @apply col-span-2
+  }
+}
+
+
+@layer utilities {
+  .flex-center {
+    @apply justify-center items-center
+  }
+  .flex-normal {
+    @apply justify-start items-start
+  }
+  .row-md {
+    @apply flex-col md:flex-row
+  }
+  .text-xs-md {
+    @apply text-sm md:text-xs
+  }
+  .show-md {
+    @apply hidden md:block
+  }
+  .container-width {
+    @apply md:w-8/12 mx-auto
+  }
+  .nowrap-md {
+    @apply flex-wrap md:flex-nowrap
+  }
+}
+
+@layer components {
+  #header-top {
+    @apply bg-dark-300 show-md text-white font-OS
+  }
+  .ht-container {
+    @apply flex items-center justify-between px-4 py-2 text-xs container-width
+  }
+  .ht-list {
+    @apply flex flex-center
+  }
+  .ht-list-item {
+    @apply mr-2
+  }
+  .ht-list-item i {
+    @apply mr-1 text-sm
+  }
+  .htu-account {
+    @apply font-bold ml-2
+  }
+  .htu-account i {
+    @apply mr-1
+  }
+  /* Header Middle */
+  #header-middle {
+    @apply bg-dark-100 text-white
+  }
+  .hm-container {
+    @apply flex flex-center container-width row-md p-4 
+  }
+  .hm-brand h1{
+    @apply font-extrabold text-3xl mb-4
+  }
+  .hm-brand i {
+    @apply ml-1
+  }
+  .hm-form-container {
+    @apply flex flex-1 mb-5 w-4/5
+  }
+  .hm-form {
+    @apply flex flex-1 flex-center h-10
+  }
+  .rounded-form-input {
+    @apply rounded-tl-full rounded-bl-full px-2 h-full w-3/4 pl-8 outline-none text-black
+  }
+  .btn {
+    @apply text-white border border-main-red transition duration-500 hover:text-main-red bg-main-red hover:bg-white h-full text-sm px-3 py-2
+  }
+  .btn-form {
+    @apply rounded-tr-full rounded-br-full -ml-2 w-1/4
+  }
+  .hm-data i {
+    @apply text-white text-base
+  }
+  .hm-data {
+    @apply flex
+  }
+  .hm-icon {
+    @apply flex flex-col text-sm flex-center mx-2 relative
+  }
+  .hm-label {
+    @apply flex flex-center w-4 h-4 bg-main-red absolute rounded-full -top-3 right-0
+  }
+  /* Header Bottom */
+  #header-bottom {
+    @apply bg-light show-md
+  }
+  .hb-container {
+    @apply container-width px-4 pt-2
+  }
+  .hb-list {
+    @apply flex
+  }
+  .hb-list-item {
+    @apply mx-2 transition duration-500 hover:text-main-red text-sm border-b-2 border-transparent hover:border-main-red pb-2
+  }
+  /* Banners */
+
+  #banners-grid {
+    @apply grid grid-cols-1 container-width my-10 gap-y-5 px-5
+  }
+  #banner1 {
+    @apply bg-[url('../img/banner-1.jpg')]
+  }
+  #banner2 {
+    @apply bg-[url('../img/banner-2.jpg')]
+  }
+  #banner3 {
+    @apply bg-[url('../img/banner-3.jpg')]
+  }
+  .banner {
+    @apply bg-cover bg-center h-60 rounded-md
+  }
+  .banner-caption {
+    @apply w-3/4 rounded-md rounded-br-50% bg-main-red bg-opacity-60 flex text-white p-5 justify-center h-full font-bold flex-col
+  }
+  .banner-caption h2 {
+    @apply text-xl mb-2
+  }
+  .banner-caption a {
+    @apply text-xl
+  }
+  .banner-caption i {
+    @apply text-white ml-2
+  }
+  /* Products Grid */
+
+  .products-container {
+    @apply container-width px-5
+  }
+  .section-title {
+    @apply uppercase text-black font-bold text-center my-5
+  }
+  .products-grid {
+    @apply grid grid-cols-1 gap-y-5
+  }
+  .card {
+    @apply flex flex-col flex-center text-sm border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg cursor-pointer relative hover:border-main-red transition duration-500
+  }
+  .p-category {
+    @apply uppercase text-gray-300 font-bold mb-2
+  }
+  .p-title {
+    @apply text-black uppercase font-bold mb-2
+  }
+  .p-price {
+    @apply text-main-red font-bold mb-2 uppercase
+  }
+  .btn-buy {
+    @apply mt-2 rounded-full
+  }
+  .label {
+    @apply uppercase font-bold top-2 right-2 absolute border leading-none p-1
+  }
+  #new-products .label{
+    @apply text-white bg-main-red border-white
+  }
+  #best-sellers .label{
+    @apply text-main-red bg-white border-main-red
+  }
+  /* Deal Headset */
+  #deal-headset {
+    @apply bg-light p-4 bg-no-repeat bg-deal bg-deal-size-mobile bg-deal-position-mobile my-10 h-600px  flex justify-center
+  }
+  .deal-caption {
+    @apply flex flex-col items-center h-auto
+  }
+  .time-container {
+    @apply grid grid-cols-2 mb-4 gap-y-5
+  }
+  .time-ball {
+    @apply p-4 flex flex-col text-white bg-main-red w-24 h-24 rounded-full mx-4 flex-center
+  }
+  .tb-time {
+    @apply font-bold text-xl
+  }
+  .tb-unity {
+    @apply text-lg
+  }
+  .deal-title {
+    @apply text-black font-bold uppercase text-center text-base mb-2
+  }
+  .deal-text {
+    @apply uppercase text-black font-thin text-lg whitespace-nowrap mb-2
+  }
+  .btn-deal {
+    @apply rounded-full px-5 py-3 uppercase text-xl h-auto
+  }
+  /* Newsletter */
+  #newsletter-section {
+    @apply flex flex-col flex-center my-10 py-10
+  }
+  .nws-title {
+    @apply mb-4 text-xl font-bold text-black
+  }
+  .nws-title span {
+    @apply uppercase
+  }
+  #nws-form {
+    @apply w-4/5 h-10 mb-10
+  }
+  #nws-form input {
+    @apply border-gray-300 border h-full
+  }
+  #nws-form button {
+    @apply h-full
+  }
+  .nws-icons {
+    @apply flex flex-center
+  }
+  .nws-link {
+    @apply shadow-md border border-light mx-2 w-10 h-10 hover:bg-light flex flex-center transition duration-500
+  }
+  .nws-link i {
+    @apply text-gray-600
+  }
+  .nws-link:hover i {
+    @apply text-main-red transition duration-500
+  }
+
+
+  /* Footer */
+  footer {
+    @apply bg-dark-100 py-10
+  }
+  .footer-container {
+    @apply container-width grid grid-cols-1 text-gray-500  gap-y-4
+  }
+  .f-title {
+    @apply uppercase text-white mb-4 font-bold
+  }
+  .fa-contact {
+    @apply flex flex-col mt-5
+  }
+  .fa-contact span {
+    @apply mb-2
+  }
+  .fa-contact i {
+    @apply mr-1
+  }
+  #footer-links {
+    @apply flex row-md
+  }
+  .fl-list {
+    @apply pl-1
+  }
+  .fl-item {
+    @apply mb-5 mx-2
+  }
+  .fl-list-item {
+    @apply mb-1 hover:text-white transition duration-500
+  }
+  #footer-payments,#footer-copy {
+    @apply justify-self-center
+  }
+  #footer-payments {
+    @apply my-10 flex flex-center
+  }
+  .fp-link {
+    @apply w-10 h-10 mx-3 flex flex-center
+  }
+  .fp-link i {
+    @apply text-dark-200 transition duration-500 hover:text-main-red text-5xl
+  }
+}

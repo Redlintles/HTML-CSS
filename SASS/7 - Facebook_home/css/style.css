@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  align-items: space-around;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 0.5rem;
+}
+
+.main {
+  background-color: #F0F2F5;
+  height: 51.5rem;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 5.7rem;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.footer a {
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #777;
+}
+.footer-top {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+}
+.footer-top ul {
+  margin-bottom: 0.7rem;
+}
+.footer-top ul li {
+  margin-right: 0.8rem;
+}
+.footer-top .morelanguages {
+  display: inline;
+  padding: 0 0.5rem;
+  border: none;
+}
+.footer-top .morelanguages i {
+  color: #666;
+}
+.footer-bottom {
+  margin-top: 0.8rem;
+}
+.footer-bottom ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: space-between;
+  height: 4rem;
+  margin-bottom: 1.5rem;
+}
+.footer-bottom ul li {
+  margin-right: 1.5rem;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: none;
+  color: #666;
+}
+
+.recent-login {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  top: none;
+  right: none;
+  bottom: none;
+  left: -1.3rem;
+  height: 9.8rem;
+}
+.recent-login img {
+  width: 15rem;
+  height: 5rem;
+  position: relative;
+  top: none;
+  right: none;
+  bottom: none;
+  left: -1.8rem;
+}
+.recent-login h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.recent-login-title-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.recent-login-title-container p {
+  color: #666;
+  font-size: 1.07rem;
+  font-weight: 400;
+}
+.recent-login-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1.8rem;
+}
+.recent-login-card-container .exit {
+  position: relative;
+  top: -10rem;
+  right: none;
+  bottom: none;
+  left: 0.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.4;
+}
+.recent-login-card-container .exit i {
+  color: #fff;
+}
+.recent-login-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-size: 100%;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-color: #f5f6f7;
+  background-image: none;
+  background-repeat: no-repeat;
+  width: 11.5rem;
+  height: 14.5rem;
+  margin-right: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0.3px 0.3px 1px #ccc, -0.3px -0.3px 1px #ccc;
+  transition: 0.2s;
+}
+.recent-login-card h3 {
+  width: 100%;
+  background-color: #fff;
+  padding: 0.8rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #1877F2;
+}
+.recent-login-card .seal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -8.95rem;
+  right: none;
+  bottom: none;
+  left: 10rem;
+  background-color: #FA3E3E;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  color: #fff;
+}
+.recent-login-card:hover {
+  box-shadow: 0.3px 0.3px 10px #ccc, -0.3px -0.3px 10px #ccc;
+}
+.recent-login-card .fa-plus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -4rem;
+  right: none;
+  bottom: none;
+  left: 4rem;
+  background-color: #166FE5;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+}
+.recent-login #photo1 {
+  background-image: url("../img/photo.jpg");
+}
+.recent-login #photo1 h3 {
+  color: #000;
+}
+
+.login {
+  padding-top: 3.5rem;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 25rem;
+  width: 28.2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px #ccc;
+}
+.login-container-forgot {
+  color: #1877F2;
+}
+.login-container .form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #ccc;
+}
+.login-container .form-container-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.login-container .form-container input[type=submit] {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: none;
+  color: #fff;
+  background-color: #1877F2;
+  padding: 0.8rem;
+  width: 92%;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1.2rem;
+}
+.login-container .form-container input[type=submit]:hover {
+  background-color: #166FE5;
+}
+.login-container .text {
+  width: 92%;
+  margin: 0 auto;
+  height: 3.8rem;
+  outline: none;
+  border: 1.5px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.login-container .text:focus {
+  border: 1.5px solid #166FE5;
+}
+.login-container .text::placeholder {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: none;
+  color: #999;
+}
+.login-newuser {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+.login-newuser-button {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 1.15rem;
+  border: none;
+  background-color: #42B72A;
+  border-radius: 5px;
+}
+.login-newuser-button:hover {
+  background-color: #36A420;
+}
+.login-bottomtext {
+  font-weight: 400;
+  font-size: 1.02rem;
+  text-align: center;
+  color: none;
+}
+.login-bottomtext-link {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */

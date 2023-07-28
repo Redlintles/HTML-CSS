@@ -1,0 +1,31 @@
+@mixin center
+    max-width: 1000px
+    margin: 0 auto
+
+@mixin font($w: 400, $s: 1rem,$al: center,$c: #fff)
+    font-weight: $w
+    font-size: $s
+    text-align: $al
+    color: $c
+
+@mixin flex($d: row, $w: nowrap, $jc: center, $ai: center)
+    display: flex
+    flex-direction: $d
+    flex-wrap: $w
+    justify-content: $jc
+    align-items: $ai
+
+@mixin background($s: none,$px: 0, $py: 0,$c: none,$img: none, $r: no-repeat)
+    background-size: $s
+    background-position-x: $px
+    background-position-y: $py
+    background-color: $c
+    background-image: $img
+    background-repeat: $r
+
+@mixin position($p: static, $t: none, $r: none, $b: none, $l: none)
+    position: $p
+    top: $t
+    right: $r
+    bottom: $b
+    left: $l

@@ -1,0 +1,101 @@
+.pgrid{
+  margin: 2rem auto;
+  height: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pgrid h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.pgrid .row,
+.pgrid .card{
+  height: 100%;
+}
+
+.pgrid .card {
+  position: relative;
+  margin: 1rem;
+}
+
+.pgrid .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pgrid .card-body > * {
+  margin-bottom: 1rem;
+}
+
+.p-category {
+  color: var(--gray-text-color);
+  font-size: 1.5rem
+}
+
+.p-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+
+}
+
+.rating-box {
+  display: flex;
+}
+
+.p-price {
+  font-size: 1.5rem;
+}
+
+.p-price,
+.rating-box i {
+  color: var(--primary-color);
+}
+
+.rating-box i {
+  margin: 0 .2rem;
+}
+
+.label {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 0 .3rem;
+}
+
+
+.new {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+
+}
+.hot {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  .p-price,.p-title,.p-category {
+    font-size: 1.2rem;
+  }
+
+  .pgrid .col-md-2 {
+    width: 20%;
+  }
+
+  .pgrid h3 {
+    text-align: left;
+  }
+  .pgrid .card {
+    padding: 1rem;
+    margin: 0;
+  }
+
+}

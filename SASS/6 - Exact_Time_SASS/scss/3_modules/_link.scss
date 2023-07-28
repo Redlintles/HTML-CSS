@@ -1,0 +1,45 @@
+@use "../1_base/variables";
+@use "./mixins";
+
+
+#header-bottom a {
+  color: variables.$light-color;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.banner a {
+  text-decoration: underline;
+  transition: .5s;
+  font-size: .9rem;
+  font-weight: bold;
+  color: variables.$light-color;
+}
+
+#banner2 a:hover {
+  color: variables.$dark-bg-color;
+}
+
+#banner1, #banner3 {
+  a:hover {
+    color: variables.$primary-color;
+  }
+}
+
+#banner3 a {
+  color: variables.$dark-bg-color;
+}
+
+#links-section a {
+  color: variables.$secondary-color;
+  transition: .5s;
+  font-size: 1.2rem;
+
+  @include mixins.media {
+    font-size: .8rem;
+  }
+
+  &:hover {
+    color: variables.$primary-color;
+  }
+}

@@ -1,0 +1,220 @@
+header {
+  background-color: var(--main-black);
+  padding: 1rem 0;
+}
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  width: var(--navbar-width);
+  flex-direction: column;
+  padding: 0 .5rem;
+}
+.header-left-container {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+  align-items: center;
+}
+.header-links-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header-logo-container {
+  display: flex;
+  margin-right: .5rem;
+  flex-grow: 2;
+}
+.header-logo-container:first-child {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.header-logo-container:last-child {
+  height: 1.2rem;
+}
+.form-container {
+  display: flex;
+  background-color: transparent;
+  flex-grow: 1;
+}
+.form-container form {
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid white;
+  justify-content: space-between;
+  padding: 0 .5rem;
+}
+#search-form-input {
+  background-color: transparent;
+  height: 2rem;
+  padding-left: .4rem;
+  width: 90%;
+  color: white;
+  outline: none;
+}
+#search-form-input::placeholder {
+  color: white;
+}
+.form-container button {
+  color: white;
+  background-color: transparent;
+  width: 10%;
+}
+.htc-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: .3rem .8rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-bar-anime {
+  position: absolute;
+  height: .2rem;
+  width: 1.8rem;
+  background-color: white;
+  border-radius: 10px;
+  left: 1rem;
+  bottom: -.5rem;
+  transition: left .5s ease;
+}
+#htc-movies:hover ~ .bottom-bar-anime,
+#htc-movies:focus ~ .bottom-bar-anime {
+  left: 9rem;
+}
+#htc-tv:hover ~ .bottom-bar-anime,
+#htc-tv:focus ~ .bottom-bar-anime {
+  left: 16.1rem;
+}
+#htc-music:hover ~ .bottom-bar-anime,
+#htc-music:focus ~ .bottom-bar-anime {
+  left: 23rem;
+}
+.htc-hover-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: var(--main-black);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .5s ease, opacity .5s ease;
+  z-index: 10;
+  padding: 1.5rem 0;
+  width: 100vw;
+  top: 1.7rem;
+  left: -.499rem;
+}
+.htc-hover-container > div {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 1.5rem;
+}
+.htc-hover-container >div:not(:first-child) {
+  flex-direction: column;
+}
+.hc-img-container {
+  margin-top: 2rem;
+  order: 4;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hc-img-container div {
+  display: inline-flex;
+  flex-direction: column;
+  width: max-content;
+}
+.hc-img-container img{
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1rem;
+  order: 2;
+}
+.htc-hover-container > div:not(.htc-hover-container:last-child) {
+  border-right: .5px solid white;
+}  
+#htc-games:hover + .htc-hover-container,
+#htc-movies:hover + .htc-hover-container,
+#htc-tv:hover + .htc-hover-container,
+#htc-music:hover + .htc-hover-container,
+.htc-hover-container:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.hc-list {
+  flex-direction: column;
+}
+.hc-list li:not(hc-list:last-child) {
+  margin-bottom: .5rem
+}
+.hc-text-lg {
+  font-size: .8rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hc-text-sm {
+  font-size: .9rem;
+  color: white;
+  font-weight: 600;
+  margin: .3rem 0;
+}
+.hc-platforms-container {
+  border: 1px solid white;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  margin: 2rem 0;
+}
+.hc-platforms-container > .hc-text-sm {
+  display: none;
+}
+.hc-list .hc-text-sm {
+  display: block;
+}
+.hc-platforms-container .hc-list {
+  flex-direction: row;
+  align-items: center;
+  padding-right: .5rem;
+}
+.hc-platforms-container .hc-list li:not(:last-of-type) {
+  margin-right: 1rem;
+}
+.hc-media-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.hc-media-item {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hc-media-img {
+  width: 5rem;
+  height: 6rem;
+}
+.hc-media-img + img {
+  position: absolute;
+  width: 3rem;
+  right: 1rem;
+  top: .3rem;
+}
+.hc-media-img + div {
+  position: absolute;
+  right: 1rem;
+  top: .3rem;
+}
+.header-left-container > .htc-btn {
+  display: inline-block;
+  height: 2rem;
+  margin-left: .5rem;
+}
+.header-links-container .htc-btn {
+  display: none;
+}

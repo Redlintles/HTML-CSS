@@ -1,0 +1,39 @@
+@use "../3_modules/mixins";
+
+#header-top {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+
+  .col-12 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+  }
+
+  h1 {
+    display: flex;
+    font-weight: 550;
+    font-size: 2rem;
+
+    img {
+      margin-right: .5rem;
+      width: 30px;
+      height: 30px;
+      align-self: center;
+    }
+  }
+}
+
+
+#header-bottom {
+  @include mixins.flex($jc:center);
+  padding: 1rem 0;
+
+  li {
+    margin: 0 1rem;
+  }
+
+  a {
+    @include mixins.hover;
+  }
+}

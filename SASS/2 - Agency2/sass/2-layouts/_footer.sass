@@ -1,0 +1,96 @@
+@use "../1-base/_variables"
+@use "mixins"
+
+.footer
+    background-color: variables.$footer-bg
+    padding: 8rem
+    width: 100%
+
+    h5
+        font-size: 1.5rem
+        color: variables.$light-color
+        margin-bottom: 1rem
+
+        @include mixins.mobile
+            margin: 1rem 0
+
+    p,a
+        color: variables.$text-color
+        font-size: 1.2rem
+        
+    &-container
+        width: 60%
+        margin: 0 auto
+        @include mixins.mobile
+            width: 100%
+            @include mixins.flex($d: column)
+
+    &-top
+        display: flex
+        justify-content: space-between
+
+        @include mixins.mobile
+            width: 100%
+            flex-direction: column
+            align-items: flex-start
+
+        &-about
+            width: 45%
+
+            @include mixins.mobile
+                width: 100%
+
+        &-links-container
+            display: flex
+            width: 49%
+
+            @include mixins.mobile
+                width: 100%
+                flex-direction: column
+                margin-top: 2rem
+
+            .link-container
+                @include mixins.flex($d: column)
+                margin-right: 1rem   
+
+                @include mixins.mobile     
+                    margin: 0      
+
+                ul
+                    display: flex
+                    flex-direction: column
+                    width: 30%
+
+                    @include mixins.mobile
+                        width: 100%
+
+                    li
+                        margin: .5rem 0                       
+
+                        a
+                            transition: .5s
+                            white-space: nowrap
+                            margin-right: .5rem
+
+                            &:hover
+                                color: variables.$light-color
+
+    &-bottom
+        margin-top: 2rem
+
+        @include mixins.mobile
+            #copyright
+                text-align: center
+                
+            p
+                white-space: nowrap
+                
+
+
+
+                    
+
+
+
+
+    

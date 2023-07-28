@@ -1,0 +1,23 @@
+@use "./mixins";
+@use "../1_base/variables";
+
+.btn {
+  padding: 10px 15px;
+  color: variables.$light-color;
+  border: 1px solid variables.$primary-color;
+  transition: .5s;
+  background-color: variables.$primary-color;
+  border-radius: 5px;
+  width: 100%;
+  align-self: center;
+
+  @include mixins.media {
+    width: auto;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: variables.$primary-color;
+    cursor: pointer;
+  }
+}

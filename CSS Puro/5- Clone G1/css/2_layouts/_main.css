@@ -1,0 +1,28 @@
+main {
+  display: grid;
+  max-width: 1170px;
+  width: 100vw;
+  margin: 2rem auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "aside"
+                       "other";
+}
+#main-news {
+  grid-area: main;
+}
+#other-news {
+  grid-area: other;
+}
+#aside-section {
+  grid-area: aside;
+}
+@media(min-width: 768px) {
+  main {
+    grid-template-columns: repeat(3,minmax(auto,1fr));
+    grid-template-areas:
+    "main  main main"
+    "other other aside ";
+    grid-gap: 1rem;
+    grid-template-rows: 100vh auto;
+  }
+}

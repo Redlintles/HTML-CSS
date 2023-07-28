@@ -1,0 +1,10 @@
+#copy-section {
+  display: flex;
+  justify-content: center;
+}
+#copy-section p {
+  color: var(--light-color);
+}
+#copy-section span {
+  color: var(--primary-color);
+}

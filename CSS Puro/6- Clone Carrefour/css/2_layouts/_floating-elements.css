@@ -1,0 +1,43 @@
+.floating-elements>* {
+  position: fixed;
+  z-index: 10;
+}
+
+#btn-back-to-top {
+  bottom: 2rem;
+  left: 2rem;
+}
+
+#score-btn {
+  right: 0;
+  top: 40%;
+
+}
+
+#btn-back-to-top,
+.popup {
+  visibility: visible;
+  transition: opacity 1s ease, visibility 1s ease;
+  opacity: 1;
+}
+
+.popup {
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.popup__left {
+  display: flex;
+  width: 60%;
+  padding-right: 10%;
+}
+
+.popup__right {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  gap: 0 1rem;
+}

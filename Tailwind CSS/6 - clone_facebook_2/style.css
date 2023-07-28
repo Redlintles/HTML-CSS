@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  main {
+    @apply w-full
+  }
+}
+
+@layer utilities {
+  .fcol {
+    @apply flex flex-col
+  }
+}
+
+@layer components {
+  .main-container {
+    @apply w-full grid grid-cols-1 mx-auto justify-items-center items-center
+  }
+  .text-container {
+    @apply fcol
+  }
+  .logo-container {
+    @apply bg-logo w-40 h-20 bg-no-repeat bg-center
+  }
+  .tc-text {
+    @apply max-w-md text-subtitle leading-none tracking-tight hidden
+  }
+  .form-container {
+    @apply fcol w-full
+  }
+  .form-card {
+    @apply bg-white rounded-lg fcol w-full
+  }
+  .form-card-top form {
+    @apply fcol
+  }
+  .form-input {
+    @apply text-sm border rounded-md border-gray-500 h-12 text-black placeholder:pl-2 placeholder:text-gray-500 mb-2 bg-main-gray w-full
+  }
+  .form-submit {
+    @apply bg-main-blue hover:bg-main-blue-hover text-white px-5 py-2 text-center font-bold text-lg rounded-md
+  }
+  .form-card-bottom {
+    @apply fcol items-center
+  }
+  .form-forget {
+    @apply text-main-blue text-sm hover:underline pt-2 pb-4 border-b w-full text-center border-gray-300
+  }
+  .form-new-account {
+    @apply bg-main-green hover:bg-main-green-hover px-3 py-2 w-7/12 text-center font-bold text-lg text-white rounded-md my-4
+  }
+  .vip-new-account {
+    @apply w-full text-sm tracking-tight mt-2 text-center
+  }
+  .vip-new-account a{
+    @apply text-black font-semibold hover:underline
+  }
+  .footer-container {
+    @apply w-full mx-auto px-10 py-10
+  }
+  .footer-top {
+    @apply border-y border-gray-400 py-5
+  }
+  .ft-ul {
+    @apply grid grid-cols-2 justify-items-center text-sm
+  }
+  .ft-ul-li {
+    @apply text-xs mr-2 text-gray-500 hover:underline
+  }
+  .footer-bottom {
+    @apply hidden  py-5 border-b border-gray-400
+  }
+  .fb-ul {
+    @apply flex flex-wrap
+  }
+  .fb-ul-li {
+    @apply mr-2 text-xs text-gray-500 hover:underline tracking-tight leading-loose
+  }
+  .footer-copy {
+    @apply text-sm text-center text-gray-500 mt-5
+  }
+}
+
+@screen md {
+  main {
+    @apply h-500px py-20 bg-main-gray
+  }
+  .main-container {
+    @apply w-980px grid-cols-2 px-10
+  }
+  .logo-container {
+    @apply w-290px -ml-6 bg-left
+  }
+  .tc-text {
+    @apply  block
+  }
+  .form-container {
+    @apply w-auto justify-self-end
+  }
+  .form-card {
+    @apply w-350px p-4 shadow-lg
+  }
+  .form-input {
+    @apply bg-transparent
+  }
+  .vip-new-account {
+    @apply text-left
+  }
+  .footer-container {
+    @apply w-980px
+  }
+  .footer-top {
+    @apply border-0 border-b
+  }
+  .ft-ul {
+    @apply flex
+  }
+  .footer-bottom {
+    @apply block
+  }
+  .footer-copy {
+    @apply text-left
+  }
+}

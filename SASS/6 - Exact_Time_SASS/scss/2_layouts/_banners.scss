@@ -1,0 +1,63 @@
+@use "../1_base/variables";
+@use "../3_modules/mixins";
+
+.banners-container {
+
+  .row {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    
+
+    @include mixins.media {
+      margin-top: -3rem;
+      justify-content: space-evenly;
+      height: 250px;
+    }
+
+    .banner {
+      height: 300px;
+      @include mixins.flex($jc: space-between,$d:column);
+      padding: 1rem;
+      margin: 1rem 0;
+
+      @include mixins.media {
+        width: 31%;
+        height: 250px;
+      }
+
+      h3 {
+        color: variables.$light-color;
+        font-size: 1.5rem;
+        margin: 0;
+        text-transform: uppercase;
+      }
+    }
+
+    @for $i from 1 through 3 {
+      #banner#{$i} {
+        @include mixins.background(
+          $img:url("../img/relogio#{$i}.png"),
+          $size: 120px 85%,
+          $position: 95% center
+        )
+      }
+    }
+
+    #banner1 {
+      background-color: variables.$dark-bg-color;
+    }
+
+    #banner2 {
+      background-color: variables.$primary-color;
+    }
+
+    #banner3 {
+      background-color: variables.$light-bg-color;
+
+      h3 {
+        color: variables.$dark-bg-color;
+      }
+    }
+  }
+}

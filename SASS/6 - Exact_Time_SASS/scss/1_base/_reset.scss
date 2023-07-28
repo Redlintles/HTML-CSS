@@ -1,0 +1,36 @@
+@use './variables';
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat",sans-serif;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: variables.$primary-bg-color;
+  padding: 0;
+  margin: 0;
+}
+
+input[type=text] {
+  border: none;
+  outline: none;
+  box-shadow:none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,27 @@
+.footer-img {
+  height: 225px;
+  border: 4px solid var(--primary-bg-color);
+  background: no-repeat center / cover;
+  transition: .5s;
+}
+.footer-img:hover {
+  border-color: var(--primary-color);
+}
+#insta1 {
+  background-image: url("../../img/insta1.jpg");
+}
+#insta2 {
+  background-image: url("../../img/insta2.jpg");
+}
+#insta3 {
+  background-image: url("../../img/insta3.jpg");
+}
+#insta4 {
+  background-image: url("../../img/insta4.jpg");
+}
+#insta5 {
+  background-image: url("../../img/insta5.jpg");
+}
+#insta6 {
+  background-image: url("../../img/insta6.jpg");
+}

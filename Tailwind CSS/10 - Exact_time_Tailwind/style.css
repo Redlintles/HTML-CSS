@@ -1,0 +1,390 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-100 text-white font-montserrat
+  }
+}
+@layer utilities {
+  .flex-center {
+    @apply justify-center items-center
+  }
+  .row-md {
+    @apply flex-col md:flex-row
+  }
+  .container-width {
+    @apply md:w-8/12 mx-auto
+  }
+  .simple-t {
+    @apply transition-all duration-500
+  }
+}
+
+@layer components {
+  /* Header top */
+  #header-top {
+    @apply flex px-1 py-4 items-center container-width justify-center row-md
+  }
+  .header-brand {
+    @apply text-lg font-bold mb-4
+  }
+  .header-form {
+    @apply flex items-center justify-center mb-8
+  }
+  .main-form {
+    @apply flex bg-transparent border-2 border-main-gray px-2 py-1 w-full items-center
+  }
+  .main-form {
+    @apply text-main-orange
+  }
+  .main-form-input {
+    @apply bg-transparent h-full px-2 flex-1 flex outline-none
+  }
+  .btn {
+    @apply px-2 py-1 text-white bg-transparent simple-t hover:bg-main-orange border border-main-orange rounded-sm
+  }
+  .header-user {
+    @apply mb-2
+  }
+  .header-user,.icon-container {
+    @apply flex
+  }
+  .icon-container {
+    @apply mr-4 relative
+  }
+  .icon-label {
+    @apply absolute bg-red-700 text-white flex flex-center w-5 h-5 rounded-full -top-4 -right-4  
+  }
+  .icon-count {
+    @apply font-bold whitespace-nowrap ml-2
+  }
+  #count-label {
+    @apply left-3
+  }
+  /* Header Bottom */
+  #header-bottom {
+    @apply px-1 py-2 bg-main-orange
+  }
+  #header-bottom nav {
+    @apply container-width
+  }
+  .hb-list {
+    @apply flex items-center justify-center
+  }
+  .hb-list-item {
+    @apply font-semibold text-white mx-2 text-sm
+  }
+  /* Carousel */
+  .carousel-input {
+    @apply hidden
+  }
+  #carousel-container {
+    @apply container-width h-70vh relative
+  }
+  .carousel-overflow {
+    @apply w-full h-full overflow-x-hidden
+  }
+  .carousel-inner {
+    @apply flex w-full h-full transition-all duration-500 ease-in-out
+  }
+  .carousel-slides {
+    @apply w-full h-full z-10
+  }
+  .carousel-item {
+    @apply w-full h-full flex-none relative flex flex-center bg-cover bg-center
+  }
+  #item1 {
+    @apply bg-[url('../img/banner1.jpg')]
+  }
+  #item2 {
+    @apply bg-[url('../img/banner2.jpg')]
+  }
+  #item3 {
+    @apply bg-[url('../img/banner3.jpg')]
+  }
+  #item4 {
+    @apply bg-[url('../img/banner4.jpg')]
+  }
+  .carousel-caption {
+    @apply absolute bg-dark-100 px-4 py-4 w-auto flex flex-col bottom-2 left-10 right-10 flex-center
+  }
+  .cc-title {
+    @apply font-semibold text-lg tracking-tighter mb-4 text-center
+  }
+  .cc-text {
+    @apply text-sm text-center
+  }
+  #slide1:checked ~ .carousel-slides .carousel-inner {
+    @apply -ml-0%
+  }
+  #slide2:checked ~ .carousel-slides .carousel-inner {
+    @apply -ml-100%
+  }
+  #slide3:checked ~ .carousel-slides .carousel-inner {
+    @apply -ml-200%
+  }
+  #slide4:checked ~ .carousel-slides .carousel-inner {
+    @apply -ml-300%
+  }
+  .carousel-control {
+    @apply -mt-52 cursor-pointer z-50 w-16 h-16 bg-center bg-no-repeat bg-cover absolute hidden
+  }
+  #slide1:checked ~ #label2,
+  #slide2:checked ~ #label3,
+  #slide3:checked ~ #label4,
+  #slide4:checked ~ #label1 {
+    @apply bg-arrow-right right-1 block
+  }
+  #slide1:checked ~ #label4,
+  #slide2:checked ~ #label1,
+  #slide3:checked ~ #label2,
+  #slide4:checked ~ #label3 {
+    @apply bg-arrow-left left-1 block
+  }
+  /* Banners Grid */
+  #banners-container {
+    @apply container-width grid grid-cols-1 relative px-5 gap-5 mt-5
+  }
+  .banner {
+    @apply h-52 text-white flex flex-col justify-between p-2.5 bg-right bg-no-repeat bg-banner
+  }
+  .banner-heading {
+    @apply uppercase text-xl font-bold
+  }
+  .banner-link {
+    @apply text-sm simple-t underline font-semibold
+  }
+  #banner1 {
+    @apply bg-dark-200 bg-[url('../img/relogio1.png')]
+  }
+  #banner1 a:hover,#banner3 a:hover {
+    @apply text-main-orange
+  }
+  #banner2 a:hover {
+    @apply text-dark-100
+  }
+  #banner2 {
+    @apply bg-main-orange bg-[url('../img/relogio2.png')]
+  }
+  #banner3 {
+    @apply bg-light bg-[url('../img/relogio3.png')] text-dark-100
+  }
+  /* Best Sellers */
+  .section-title {
+    @apply text-center font-black my-10 text-main-orange uppercase text-3xl
+  }
+  #best-sellers {
+    @apply container-width my-10
+  }
+  .bs-grid {
+    @apply grid grid-cols-1 gap-5 mx-5
+  }
+  .card {
+    @apply flex flex-col flex-center simple-t rounded-md shadow-md hover:shadow-xl px-4 py-8 cursor-pointer
+  }
+  .card-img {
+    @apply h-200px mb-5
+  }
+  .p-category {
+    @apply text-main-gray text-xs mb-2
+  }
+  .p-title {
+    @apply mb-5 text-center
+  }
+  .p-price {
+    @apply text-main-orange font-bold mb-5
+  }
+  /* Deal Watch */
+  #deal-watch {
+    @apply bg-dark-200 h-90vh p-5 flex flex-center bg-[url('../img/relogio7.png')] bg-no-repeat  bg-deal-s-mobile bg-deal-p-mobile
+  }
+  .deal-caption {
+    @apply flex flex-col justify-start text-center h-full items-center
+  }
+  .dc-discount {
+    @apply text-sm text-main-orange 
+  }
+  .dc-title {
+    @apply font-bold uppercase text-5xl my-2
+  }
+  .dc-text {
+    @apply text-sm text-main-gray mb-10
+  }
+  .dc-btn {
+    @apply rounded-xl px-5 py-2 text-xl
+  }
+  /* News Section */
+  #news-section {
+    @apply container-width
+  }
+  .ng-grid {
+    @apply grid grid-cols-1 my-5 gap-y-5 mx-5
+  }
+  .ng-banner {
+    @apply hidden flex-col flex-center row-span-2 bg-dark-200 text-center
+  }
+  .ngb-best {
+    @apply text-xs text-main-gray
+  }
+  .ngb-title {
+    @apply text-3xl font-bold uppercase my-2
+  }
+  .ngb-price {
+    @apply text-xs text-main-orange
+  }
+  /* Gallery */
+  #gallery-grid {
+    @apply grid grid-cols-2 mt-10 gap-2
+  }
+  .gallery-item {
+    @apply w-full simple-t cursor-pointer border-4 border-none hover:border-main-orange hover:border-solid bg-cover bg-center bg-no-repeat h-52
+  }
+  #gallery1 {
+    @apply bg-[url('../img/insta1.jpg')]
+  }
+  #gallery2 {
+    @apply bg-[url('../img/insta2.jpg')]
+  }
+  #gallery3 {
+    @apply bg-[url('../img/insta3.jpg')]
+  }
+  #gallery4 {
+    @apply bg-[url('../img/insta4.jpg')]
+  }
+  #gallery5 {
+    @apply bg-[url('../img/insta5.jpg')]
+  }
+  #gallery6 {
+    @apply bg-[url('../img/insta6.jpg')]
+  }
+  /* Footer Links */
+  #footer-links {
+    @apply grid grid-cols-1
+  }
+  .fl-item {
+    @apply flex flex-center flex-col p-10 border-y-2 border-main-gray text-center
+  }
+  .fl-title {
+    @apply font-extralight text-2xl uppercase text-center mb-4
+  }
+  .fl-list {
+    @apply flex flex-col flex-center text-center text-xs text-main-gray
+  }
+  .fl-list-item {
+    @apply mb-2 simple-t hover:text-main-orange
+  }
+  #middle-fl {
+    @apply border-0 
+  }
+  .mfl-title {
+    @apply uppercase font-black text-2xl
+  }
+  .mfl-text {
+    @apply text-xs text-main-gray my-4
+  }
+  .mfl-phone {
+    @apply text-main-orange font-black text-3xl
+  }
+  .mfl-phone i {
+    @apply mr-2
+  }
+  /* Newsletter */
+  #footer-newsletter {
+    @apply flex flex-col flex-center py-4 bg-dark-200 border-b-2 border-main-gray
+  }
+  .fn-call {
+    @apply text-sm text-main-gray
+  }
+  .fn-form {
+    @apply w-4/5 my-4
+  }
+  .fn-media {
+    @apply flex
+  }
+  .fn-media a{
+    @apply text-main-gray mx-2 simple-t hover:text-main-orange text-xl mb-4
+  }
+  #footer-copy {
+    @apply flex flex-center py-4 text-sm
+  }
+  #footer-copy span {
+    @apply text-main-orange
+  }
+}
+
+@screen md {
+  /* Header Top */
+  #header-top {
+    @apply justify-between
+  }
+  .header-brand,
+  .header-form,
+  .header-user {
+    @apply mb-0
+  }
+  .header-form {
+    @apply w-5/12
+  }
+  /* Header Bottom */
+  .hb-list {
+    @apply justify-start
+  }
+  /* Carousel */
+  .carousel-caption {
+    @apply left-40 right-40 bottom-20
+  }
+  .cc-title {
+    @apply text-3xl
+  }
+  .cc-text {
+    @apply text-xs
+  }
+  .carousel-control {
+    @apply -mt-72
+  }
+  /* Banners */
+  #banners-container {
+    @apply grid-cols-3 -mt-16
+  }
+  /* Best Grid */
+  .bs-grid {
+    @apply  grid-cols-4 mx-0
+  }
+  /* Deal Watch */
+  #deal-watch {
+    @apply bg-deal-s bg-deal-p h-96
+  }
+  .deal-caption {
+    @apply flex-center h-auto
+  }
+  .dc-text,
+  .dc-discount {
+    @apply text-xs
+  }
+  .dc-title {
+    @apply text-6xl
+  }
+  /* News Grid */
+  .ng-grid {
+    @apply grid-cols-4 grid-rows-2 mx-0
+  }
+  .ng-banner {
+    @apply flex
+  }
+  /* Gallery Grid */
+  #gallery-grid {
+    @apply grid-cols-6
+  }
+  #footer-links {
+    @apply grid-cols-3
+  }
+  #middle-fl {
+    @apply border-2
+  }
+  /* Newsletter flex */
+  .fn-form {
+    @apply w-1/3
+  }
+}

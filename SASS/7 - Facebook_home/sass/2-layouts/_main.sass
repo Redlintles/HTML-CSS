@@ -1,0 +1,12 @@
+@use "mixins"
+@use "../1-base/variables"
+    
+.main
+    background-color: variables.$bg-color
+    height: 51.5rem
+
+    &-container
+        @include mixins.flex($jc: space-between,$ai: flex-start)
+        @include mixins.center
+        width: 50%
+        padding-top: 5.7rem

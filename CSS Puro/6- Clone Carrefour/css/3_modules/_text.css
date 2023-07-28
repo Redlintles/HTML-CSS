@@ -1,0 +1,77 @@
+.txt--sm {
+  font-size: .9rem;
+}
+
+.txt--sm-2 {
+  font-size: .825rem;
+}
+
+.txt--xs {
+  font-size: .75rem;
+}
+
+.txt--lg {
+  font-size: 1.2rem;
+}
+
+.txt--xl {
+  font-size: 1.5rem;
+}
+
+
+.txt--bold {
+  font-weight: bold;
+}
+
+.txt--yellow {
+  color: #ff9900;
+}
+
+.txt--gray {
+  color: #444;
+}
+
+.txt--gray-2 {
+  color: #777;
+}
+
+.txt--white {
+  color: #fff;
+}
+
+.txt--blue {
+  color: var(--main-blue);
+}
+
+.txt--underline {
+  text-decoration: underline;
+}
+
+.txt--dashed {
+  text-decoration: line-through;
+}
+
+.txt--center {
+  text-align: center;
+}
+
+.section__title {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.section__title::before {
+  content: "";
+  height: 100%;
+  border-radius: 5px;
+  left: 0;
+  position: absolute;
+  border: 2px solid var(--main-blue);
+}
+
+@media (min-width: 1200px) {
+  .section__title::before {
+    display: none;
+  }
+
+}

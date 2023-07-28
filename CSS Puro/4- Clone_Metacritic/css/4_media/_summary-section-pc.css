@@ -1,0 +1,73 @@
+@media(min-width: 1200px) {
+  .sc-note-stats,
+  .sc-media-meta {
+    display: flex;
+  }
+  .sc-video-section {
+    width: 100%;
+  }
+  .sc-main-content {
+    width: min-content;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .sc-media-img {
+    width: auto;
+    flex-grow: 1;
+  }
+  .sc-media-img img:first-child {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0;
+  }
+  .sc-media-img img:last-child {
+    width: 4rem;
+    position: absolute;
+    left: .5rem;
+    top: .8rem;
+  }
+  .sc-reviews-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .rc-review-container {
+    background-color: #f1f1f1;
+    border: 1px solid #cfcfcf;
+  }
+  .sc-deals-section,
+  .sc-trailers-section,
+  .sc-related-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .sc-note-stats-mobile,
+  .vc-mobile-text,
+  .trailer-section-mobile,
+  .rate-game-mobile,
+  .rc-title,
+  .rc-note-bars-mobile,
+  .mobile-title {
+    display: none;
+  }
+  .vc-title {
+    display: block;
+  }
+  .rc-more-reviews-btn {
+    display: none;
+  }
+  .rc-more-reviews-link {
+    display: block;
+  }
+  #summary-section .rc-note-bars {
+    display: flex;
+    padding: .5rem 2rem;
+  }
+  .rc-title,
+  .rc-note-bars {
+    display: flex;
+  }
+  .rc-note-bars {
+    padding-right: 1rem;
+  }
+}

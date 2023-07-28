@@ -1,0 +1,148 @@
+* {
+  color: #25282E;
+}
+
+a, i {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #25282E;
+  color: #fff;
+  padding: 7px 18px;
+  border-radius: 0;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+#header p {
+  margin-bottom: 0;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 40px;
+  margin-right: 15px;
+}
+
+#navbar {
+  padding: 10px;
+  margin: 10px auto;
+}
+#navbar a {
+  width: 80px;
+  color: #444;
+}
+#navbar a:hover {
+  color: #C1B696;
+}
+
+.main-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-image: url("../img/g_1.jpg");
+  margin-bottom: 30px;
+  position: relative;
+}
+.main-image-info {
+  background-color: #fff;
+  padding: 25px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+.main-image-info p {
+  color: #555;
+}
+
+#img2 {
+  background-image: url("../img/g_2.jpg");
+}
+
+#img3 {
+  background-image: url("../img/g_3.jpg");
+}
+
+#img4 {
+  background-image: url("../img/g_4.jpg");
+}
+
+#img5 {
+  background-image: url("../img/g_5.jpg");
+}
+
+#img6 {
+  background-image: url("../img/g_6.jpg");
+}
+
+.small-image-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.small-image-container p {
+  color: #555;
+}
+
+#gallery-container {
+  text-align: center;
+}
+#gallery-container h2 {
+  text-align: center;
+}
+#gallery-container h2, #gallery-container .col-md-6, #gallery-container .col-12 {
+  margin-bottom: 50px;
+}
+#gallery-container .text-container {
+  display: flex;
+  flex-direction: column;
+}
+#gallery-container .text-container a {
+  width: 100px;
+}
+#gallery-container .text-container h3, #gallery-container .text-container p {
+  text-align: start;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  height: 250px;
+  padding: 30px;
+}
+footer i {
+  color: #555;
+  font-size: 25px;
+}
+footer #social-icons-container {
+  padding: 25px;
+}
+footer #social-icons-container div {
+  text-align: center;
+}
+footer p {
+  text-align: center;
+  margin: 20px;
+  color: #555;
+}
+footer a:hover i {
+  color: #C1B696;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+@use "../1_base/variables"
+@use "../3_modules/_mixins"
+
+@for $i from 2 through 6
+    #img#{$i}
+        background-image: url("../img/g_#{$i}.jpg")
+
+.small-image-container
+    @include mixins.center-img
+
+    height: 250px
+    margin-bottom: 20px
+
+    p
+        color: variables.$secondary-color
+
+
+#gallery-container
+    text-align: center
+
+    h2
+        text-align: center
+
+
+    h2, .col-md-6, .col-12
+        margin-bottom: 50px
+
+    .text-container
+        display: flex
+        flex-direction: column
+
+        a
+            width: 100px
+
+        h3,p
+            text-align: start
+            
+            
+

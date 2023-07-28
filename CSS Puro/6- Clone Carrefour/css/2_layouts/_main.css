@@ -1,0 +1,135 @@
+.main__sales {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.section__title {
+  margin-bottom: 1rem;
+}
+
+.opportunity__container {
+  display: grid !important;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+}
+
+.opportunity__item {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opportunity__img {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid__col {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.deal__container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.deal__item {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.deal__item:nth-child(1) {
+  background-image: url("../../img/photo38.png")
+}
+
+.deal__item:nth-child(2) {
+  background-image: url("../../img/photo39.png")
+}
+
+.deal__item:nth-child(3) {
+  background-image: url("../../img/photo40.png")
+}
+
+.food__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.food__img {
+  border-radius: 5px;
+}
+
+.best-deals-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-deals__container {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+
+@media(min-width: 1200px) {
+  .opportunity__container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .deal__item {
+    width: calc(100% / 3);
+  }
+
+  .food__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 20rem;
+  }
+
+  .sale {
+    width: 25%;
+  }
+
+  .food__container .grid__col:nth-child(-n+2) {
+    grid-row: span 2;
+  }
+
+  .food__container .grid__col:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  .best-deals__container,
+  .deal__container,
+  .main__sales {
+    flex-direction: row;
+  }
+}

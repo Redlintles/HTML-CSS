@@ -1,0 +1,139 @@
+/* Header Top */
+
+#header-top .col-3 {
+  display: flex;
+  margin-right: .3rem;
+  padding: 0;
+  margin-left: -5px;
+  justify-content: center;
+}
+
+#header-top-container {
+  background-color: var(--secondary-bg-color);
+
+}
+#header-top > .row {
+  padding-top: .5rem;
+}
+
+#header-top i {
+  color: var(--primary-color);
+  font-size: .8rem;
+  margin-top: .3rem;
+  margin-right: .3rem;
+}
+
+#header-top .col-2{
+   display: flex;
+   justify-content: space-around;
+}
+
+#header-top .col-2 > span + span {
+  font-weight: bold;
+}
+
+#header-top p, #header-top span {
+  color: var(--light-color)
+}
+
+#header-top p {
+  font-size: .8rem;
+}
+
+/* Main Heder */
+
+#header-center-container {
+  background-color: var(--bg-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#header-center {
+  padding: 1rem 0;
+  height: auto;
+}
+
+#header-center .row >  * {
+  margin: .8rem 0;
+}
+
+#site-title {
+  color: var(--light-color);
+  font-weight: 900;
+  text-align: center;
+  font-size: 40px;
+}
+
+#site-title i {
+  color: var(--primary-color);
+  margin-left: .5rem;
+  font-size: 2rem;
+}
+
+#icon-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.icon-unity {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin: 0 .8rem;
+}
+
+.icon-unity i {
+  color: var(--light-color);
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.icon-unity span {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: var(--light-color);
+  position: absolute;
+  top: -10px;
+  right: -2px;
+  font-size: 1.2rem;
+}
+
+
+/* Header Bottom */
+
+#header-bottom {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+#header-bottom .hb-link {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-right: .5rem;
+}
+
+
+/* Media Query */
+
+@media (min-width:768px) {
+  #header-center {
+    padding: 1.2rem 0;
+  }
+
+  #site-title {
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .icon-unity i,
+  .icon-unity span {
+    font-size: 1rem;
+  }
+}

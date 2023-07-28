@@ -1,0 +1,84 @@
+@use "../1-base/variables"
+@use "mixins"
+
+.recent-login
+    @include mixins.flex($d: column,$jc: space-between,$ai: flex-start)
+    @include mixins.position(relative,$l: -1.3rem)
+    height: 9.8rem
+
+    img
+        width: 15rem
+        height: 5rem
+        @include mixins.position(relative,$l: -1.8rem)
+
+    h2
+        font-size: 2rem
+        font-weight: 400
+        margin-bottom: .2rem
+
+    &-title-container
+        @include mixins.flex($d: column, $ai: flex-start)
+
+        p
+            color: #666
+            font-size: 1.07rem
+            font-weight: 400
+
+    &-card-container
+        @include mixins.flex($jc: space-between, $ai: flex-start)
+        margin-top: 1.8rem
+
+        .exit
+            @include mixins.position(relative,$t: -10rem,$l: .3rem)
+            width: 1.2rem
+            height: 1.2rem
+            border-radius: 50%
+            background-color: #000
+            opacity: .4
+    
+            i
+                color: #fff
+     
+    &-card
+        @include mixins.flex($d: column,$ai: flex-start,$jc: flex-end)
+        @include mixins.background(100%,0,0,#f5f6f7)
+        width: 11.5rem
+        height: 14.5rem
+        margin-right: 1.5rem
+        border-radius: 5px
+        box-shadow: .3px .3px 1px #ccc, -.3px -.3px 1px #ccc
+        transition: .2s
+        
+        h3
+            width: 100%
+            background-color: #fff
+            padding: .8rem
+            @include mixins.font(400,1.3rem,$c: variables.$hover-color)
+
+        .seal
+            @include mixins.flex
+            @include mixins.position(relative,$t: -8.95rem,$l: 10rem)
+            background-color: variables.$seal-color
+            width: 1.7rem
+            height: 1.7rem
+            border-radius: 50%
+            color: #fff
+
+        &:hover
+            box-shadow: .3px .3px 10px #ccc, -.3px -.3px 10px #ccc
+
+        .fa-plus
+            @include mixins.flex
+            @include mixins.position(relative,$t: -4rem,$l: 4rem)
+            background-color: variables.$primary-color
+            color: #fff
+            width: 3rem
+            height: 3rem
+            border-radius: 50%
+            font-size: 1.7rem
+                
+    #photo1
+        background-image: url("../../img/photo.jpg")
+
+        h3
+            color: variables.$text-color

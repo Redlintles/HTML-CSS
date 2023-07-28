@@ -1,0 +1,29 @@
+.container--sm {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+@media(min-width: 1200px) {
+  .container--lg {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .container--lg>div:has(.section__title) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .container--lg>div:first-child a {
+    display: inline;
+  }
+
+}
+
+
+.container--lg>div:first-child a {
+  display: none;
+}

@@ -1,0 +1,39 @@
+@use "../1_base/variables";
+@use "../3_modules/mixins";
+
+
+#new-products {
+  margin-bottom: 2rem;
+  height: auto;
+
+  @include mixins.media {
+    height: 845px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  &-banner {
+    background-color: variables.$dark-bg-color;
+    @include mixins.flex($jc: center, $ai: center, $d: column);
+    height: 100%;
+    
+    .banner {
+      &-best {
+        color: variables.$secondary-color;
+      }
+
+      &-title {
+        color: variables.$light-color;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+      }
+      &-text {
+        color: variables.$primary-color;
+      }
+    }
+  }
+
+}

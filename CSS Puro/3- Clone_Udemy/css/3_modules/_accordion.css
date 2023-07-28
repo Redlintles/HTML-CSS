@@ -1,0 +1,104 @@
+.cc-accordion {
+  background-color: var(--main-bege);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.cc-accordion div {
+  width: 100%;
+}
+.accordion-top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.accordion-top p {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  pointer-events: none; 
+  font-size: .7rem;
+}
+.accordion-top:hover {
+  background-color: rgba(0,0,0,.1)
+}
+.accordion-content {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+}
+.cc-accordion-input {
+  display: none;
+}
+.cc-accordion-input:checked ~ .accordion-content{
+  display: flex;
+}
+.cc-accordion-label {
+  position: relative;
+  color: black;
+  font-size: .7rem;
+  font-weight: bold;
+  width: 100%;
+  height: 4rem;
+  padding: 10px 20px;
+}
+.cc-accordion-label::after {
+  content: "";
+  top: 40%;
+  right: 10px;
+  position: absolute;
+  width: 22px;
+  height: 12px;
+  transition: transform .4s ease;
+  background-image: url("../../img/chevron-down.svg");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cc-accordion-input:checked + .accordion-top .cc-accordion-label::after {
+  transform: rotate(-180deg)
+}
+.cca-item {
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+}
+.cca-item i {
+  font-size: .8rem;
+  margin-right: .2rem;
+}
+.lesson-check {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-position: center;
+  background-size: cover;
+}
+.lesson-check:checked {
+  background-image: url("../../img/check-lg.svg");
+  background-color: black;
+}
+.lesson-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: .7rem;
+}
+.lesson-heading {
+  margin-bottom: .3rem;
+  font-size: .8rem;
+}
+.lesson-duration {
+  font-size: .6rem;
+}
+.ar-label {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

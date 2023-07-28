@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrum E-commerce</title>
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts(Open Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="store-info-container">
+                    <span><i class="fas fa-phone"></i>(48)99999-0000</span>
+                    <span>electrum@email.com</span>
+                    <span><i class="fas fa-map-marker-alt"></i>Rua Teste, 1234</span>
+                </div>
+                <div class="header-user-top-menu">
+                    <span> <a href="">BRL</a></a></span>
+                    <span><i class="fas fa-user"><a href="">Minha Conta</a></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="main-header-container">
+                <a  id= "brand" href="">Electrum <i class="fas fa-bolt"></i></a>
+                <form action="" id="search-form">
+                    <input type="text" name="" id="text" placeholder="Busque aqui">
+                    <input id="search" type="submit" value="Pesquisar" class="btn btn-half" value='Pesquisar'>
+                </form>
+                <div class="header-actions-menu">
+                    <div class="wishlist-container">
+                        <span class="qtd">0</span>
+                        <i class="far fa-heart"></i>
+                        <a href="">Favoritos</a>
+                    </div>
+                    <div class="header-cart-container">
+                        <span class="qtd">0</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="">Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Promoções</a></li>
+                        <li><a href="">Notebooks</a></li>
+                        <li><a href="">Celulares</a></li>
+                        <li><a href="">Câmeras</a></li>
+                        <li><a href="">Acessórios</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+    <section class="banners">
+        <div class="banner" id="banner-1">
+            <div class="banner-cover">
+                <div class="banner-content">
+                    <h2>Promoção de Notebooks</h2>
+                    <a href="">Ver Mais<i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="banner-2">
+            <div class="banner-cover">
+                <div class="banner-content">
+                    <h2>Lançamento de Acessórios</h2>
+                    <a href="">Ver Mais<i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="banner-3">
+            <div class="banner-cover">
+                <div class="banner-content">
+                    <h2>Câmeras Potentes</h2>
+                    <a href="">Ver Mais<i class="fas fa-arrow-circle-right"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-grid">
+        <h2>Produtos Novos</h2>
+        <div class="products-grid-container">
+            <div class="products-grid-card">
+                <span class="label new">New</span>
+                <img src="img/prod-1.jpg" alt="">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R1 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="products-grid-card">
+                <span class="label new">New</span>
+                <img src="img/prod-2.jpg" alt="">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R2 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="products-grid-card">
+                <span class="label new">New</span>
+                <img src="img/prod-3.jpg" alt="">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R3 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="products-grid-card">
+                <span class="label new">New</span>
+                <img src="img/prod-4.jpg" alt="">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R4 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="deal-container">
+        <div class="deal-container-content">
+            <div class="deal-container-timer">
+                <div class="deal-container-timer-unity">
+                    <span class="deal-container-timer-unity-time">02</span>
+                    <span class="deal-container-timer-unity-word">Dias</span>
+                </div>
+                <div class="deal-container-timer-unity">
+                    <span class="deal-container-timer-unity-time">19</span>
+                    <span class="deal-container-timer-unity-word">Horas</span>
+                </div>
+                <div class="deal-container-timer-unity">
+                    <span class="deal-container-timer-unity-time">12</span>
+                    <span class="deal-container-timer-unity-word">Minutos</span>
+                </div>
+                <div class="deal-container-timer-unity">
+                    <span class="deal-container-timer-unity-time">03</span>
+                    <span class="deal-container-timer-unity-word">Segundos</span>
+                </div>
+            </div>
+            <h2 class="deal-container-content-title">Promoção de Fone Gamer</h2>
+            <h3 class="deal-container-content-subtitle">Toda A Linha Gamer com 50% de Desconto</h3>
+            <button class="btn">Comprar Agora</button>
+        </div>
+    </section>
+
+    <section class="products-grid">
+        <h2>Mais Vendidos</h2>
+        <div class="products-grid-container">
+            <div class="products-grid-card">
+                <span class="label hot">Hot</span>
+                <img src="img/prod-5.jpg" alt="Produto 5">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="products-grid-card">
+                <span class="label hot">Hot</span>
+                <img src="img/prod-6.jpg" alt="Produto 6">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="products-grid-card">
+                <span class="label hot">Hot</span>
+                <img src="img/prod-7.jpg" alt="Produto 7">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="products-grid-card">
+                <span class="label hot">Hot</span>
+                <img src="img/prod-8.jpg" alt="Produto 8">
+                <h3 class="category">Categoria</h3>
+                <h3 class="product-name">Nome do Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="newsletter-container">
+    
+        <h2>Assine a nossa <span>Newsletter</span></h2>
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+            <input type="submit" value="Assinar" class="btn btn-half">
+        </form>
+        <div class="social-media">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest-p"></i>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-top-about">
+                    <h3>Sobre Nós</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic minus obcaecati tenetur, consequuntur libero vero nam, dolorem mollitia officiis, ratione totam similique incidunt maxime! Eveniet voluptas veritatis quis ab?</p>
+                    <p><i class="fas fa-location-arrow"></i><a href="">Rua Das Flores, 1234</a></p>
+                    <p><i class="fas fa-user"></i><a href="">(48)999999-0000</a></p>
+                    <p><i class="far fa-envelope"></i><a href="">electrum@email.com</a></p>     
+                </div>
+                <div class="footer-top-links">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="">Promoções</a></li>
+                        <li><a href="">Headsets</a></li>
+                        <li><a href="">Pc Gamer</a></li>
+                        <li><a href="">Câmeras</a></li>
+                        <li><a href="">Mouse e teclado</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-links">
+                    <h3>Informações</h3>
+                    <ul>
+                        <li><a href="">Sobre Nós</a></li>
+                        <li><a href="">Entre em contato</a></li>
+                        <li><a href="">Política de Privacidade</a></li>
+                        <li><a href="">Pedidos e devoluções</a></li>
+                        <li><a href="">Termos e condições</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-links">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="">Minha Conta</a></li>
+                        <li><a href="">Carrinho</a></li>
+                        <li><a href="">Lista de desejos</a></li>
+                        <li><a href="">Rastrear pedido</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-payments">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-diners-club"></i>
+                    <i class="fab fa-cc-amazon-pay"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+                <p>Copyright &copy; 2021 - Electrum</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

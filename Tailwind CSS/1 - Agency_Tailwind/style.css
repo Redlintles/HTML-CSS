@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    @apply justify-center items-center
+  }
+  .flex-normal {
+    @apply justify-start items-start
+  }
+  .left-md {
+    @apply  text-center md:text-left
+  }
+  .xs-md {
+    @apply text-sm md:text-xs
+  }
+  .row-md {
+    @apply flex-col md:flex-row
+  }
+}
+
+
+@layer components {
+  /* Header */
+  #navbar {
+    @apply p-4 flex items-center bg-black justify-between
+  }
+  .header-brand {
+    @apply flex text-white font-lato items-center
+  }
+  .header-brand i {
+    @apply text-3xl
+  }
+  .header-brand h1 {
+    @apply  ml-1 text-2xl font-bold
+  }
+  .header-burger {
+    @apply text-3xl text-white block
+  }
+  .header-links {
+    @apply text-white font-lato hidden
+  }
+  .hl-list {
+    @apply flex text-xs items-center
+  }
+  .hl-list-item {
+    @apply mr-2
+  }
+  /* Components */
+  .btn {
+    @apply rounded px-2 py-1 uppercase bg-main-orange text-white mx-2 text-sm font-light hover:bg-transparent hover:text-main-orange border border-main-orange transition duration-500
+  }
+  .btn-rounded {
+    @apply px-4 rounded-full py-2
+  }
+  .section-title {
+    @apply text-4xl font-semibold my-5 text-center
+  }
+  #register {
+    @apply border-white bg-transparent hover:border-main-orange
+  }
+  /* Banner Area */
+  #banner-container {
+    @apply bg-banner bg-cover bg-center h-80vh bg-black-ops bg-blend-overlay relative
+  }
+  .banner-caption {
+    @apply absolute top-30% text-white text-center font-lato right-1 left-1
+  }
+  .banner-caption h3{
+    @apply text-3xl font-bold mb-2
+  }
+  .banner-caption h2 {
+    @apply text-4xl font-bold mb-6 tracking-tight
+  }
+  /* Services area */
+  #services-container {
+    @apply flex flex-col flex-center mx-auto mb-10
+  }
+  .services-grid {
+    @apply grid grid-cols-1 justify-items-center gap-5 mb-10 px-5
+  }
+  .services-card {
+    @apply flex flex-col flex-center px-10 py-20 shadow-md border border-gray-200 hover:shadow-lg cursor-pointer
+  }
+  .services-card i {
+    @apply text-main-orange text-4xl mb-2
+  }
+  .services-card h4 {
+    @apply text-black font-semibold mb-2 text-xl
+  }
+  .services-card p {
+    @apply text-gray-400 xs-md text-center
+  }
+  /* Portfolio Area */
+  #portfolio-container {
+    @apply bg-port-area p-10 flex flex-col flex-center
+  }
+  .portfolio-grid {
+    @apply grid grid-cols-1 gap-y-5
+  }
+  .job {
+    @apply bg-cover bg-center
+  }
+  #job1 {
+    @apply bg-[url("../img/job1.jpg")]
+  }
+  #job2 {
+    @apply bg-[url("../img/job2.jpg")]
+  }
+  #job3 {
+    @apply bg-[url("../img/job3.jpg")]
+  }
+  #job4 {
+    @apply bg-[url("../img/job4.jpg")]
+  }
+  #job5 {
+    @apply bg-[url("../img/job5.jpg")]
+  }
+  .job-cover {
+    @apply border-4 border-main-orange bg-black-ops text-white flex flex-col flex-center p-10 w-full h-full cursor-pointer transition duration-500
+  }
+  .job-cover h5 {
+    @apply font-bold mb-2 text-3xl
+  }
+  .job-cover p {
+    @apply text-sm text-center
+  }
+  /* Footer container */
+  footer {
+    @apply bg-main-gray flex flex-center
+  }
+  #footer-container {
+    @apply text-white xs-md grid grid-cols-1 px-8 py-20
+  }
+  .footer-links-container {
+    @apply flex flex-center row-md my-5
+  }
+  .fl-item {
+    @apply my-2 flex flex-center flex-col
+  }
+  .fl-title {
+    @apply xs-md font-semibold mb-2
+  }
+  .fl-list-item {
+    @apply mb-2 hover:text-white transition duration-500 whitespace-nowrap
+  }
+  .footer-about {
+    @apply flex flex-col flex-center
+  }
+  .footer-about p,.fl-list-item,.footer-copy {
+    @apply text-gray-400
+  }
+  .footer-about p,.footer-copy,.fl-list-item {
+    @apply left-md
+  }
+}
+
+@screen md {
+  .header-brand {
+    @apply  m-0
+  }
+  .header-burger {
+    @apply hidden
+  }
+  .header-links {
+    @apply flex
+  }
+  .banner-caption h3 {
+    @apply text-4xl
+  }
+  .banner-caption h2 {
+    @apply text-6xl
+  }
+  #services-container {
+    @apply w-1170px
+  }
+  .services-grid {
+    @apply grid-cols-3 p-0
+  }
+  .portfolio-grid {
+    @apply grid-cols-3 grid-rows-2 gap-x-5
+  }
+  #job1 {
+    @apply row-span-2
+  }
+  .job-cover {
+    @apply opacity-0 hover:opacity-100
+  }
+  #footer-container {
+    @apply grid-cols-2 w-8/12 gap-x-20
+  }
+  .fl-item {
+    @apply mx-5 my-0 flex-normal
+  }
+  .footer-links-container {
+    @apply my-0
+  }
+  .footer-about {
+    @apply flex-normal
+  }
+}

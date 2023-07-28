@@ -1,0 +1,41 @@
+@use "mixins"
+@use "../1-base/variables"
+
+.footer
+    @include mixins.center
+    margin-top: 2rem
+
+    a
+        @include mixins.font($c: #777,$s: .85rem)
+
+    &-top
+        border-bottom: 1px solid #ddd
+        display: flex
+
+        ul
+            margin-bottom: .7rem
+
+            li
+                margin-right: .8rem
+
+        .morelanguages
+            display: inline
+            padding: 0 .5rem
+            border: none
+
+            i
+                color: #666
+
+    &-bottom
+        margin-top: .8rem
+
+        ul
+            @include mixins.flex($w: wrap, $ai: space-between,$jc: flex-start)
+            height: 4rem
+            margin-bottom: 1.5rem
+
+            li
+                margin-right: 1.5rem
+
+    p
+        @include mixins.font($s: .8rem, $c: #666,$al: none)

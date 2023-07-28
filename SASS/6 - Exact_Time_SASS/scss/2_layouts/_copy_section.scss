@@ -1,0 +1,15 @@
+@use "../1_base/variables";
+
+#copy-section {
+  padding: 1rem;
+  text-align: center;
+
+
+  p {
+    color: variables.$light-color;
+
+    span {
+      color: variables.$primary-color;
+    }
+  }
+}

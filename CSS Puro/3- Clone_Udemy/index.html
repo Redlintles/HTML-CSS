@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS do básico ao avançado + Projetos
+  </title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Scripts -->
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <section id="header-container">
+      <div class="header-left">
+        <div class="hl-brand">
+            <img src="./img/udemy_logo.svg" alt="">
+        </div>
+        <div class="hl-course-name">
+          <i class="fas fa-arrow-left"></i>
+          <a href="#">Tailwind CSS do básico ao avançado + projetos</a>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="hr-course-conclusion">
+          <div class="hr-trophy">
+            <div class="trophy-container">
+              <i class="fas fa-trophy"></i>
+            </div>
+          </div>
+          <a href="#" class="hrcc-link">Obter Certificado <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="hr-share">
+          <button class="btn hrc-btn">Compartilhar <i class="fas fa-share"></i></button>
+          <button class="btn hrc-btn"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+      </div>
+    </section>
+  </header>
+  
+  <main>
+    <div class="main-container">
+      <input type="checkbox" class="main-container-input" name="accordion-right-show" id="ar-show">
+      <input type="checkbox" class="main-container-input" name="overview-show" id="over-show">
+      <section id="video-container">
+        <div class="vc-video">
+          <div class="vc-course-content">
+            <button class="btn"><i class="fas fa-arrow-left"></i></button>
+          </div>
+          <div class="video-heading">
+            <p>157. Conclusão</p>
+          </div>
+          <div class="vc-controls">
+            <button class="btn"><i class="fas fa-chevron-left"></i></button>
+            <i class="fas fa-play-circle"></i>
+            <button class="btn"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="video-bottom">
+            <div class="video-pb">
+              <div class="vp-progress-bar"></div>
+            </div>
+            <div class="vb-buttons">
+              <div class="vbb-left">
+                <button class="btn vb-btn"><i class="fas fa-play"></i></button>
+                <button class="btn vb-btn"><i class="fas fa-undo-alt"></i></button>
+                <div class="vb-speed">
+                  <p>1x</p>
+                </div>
+                <button class="btn vb-btn"><i class="fas fa-redo-alt"></i></button>
+                <button class="btn vb-btn"><i class="fas fa-clipboard-list"></i></button>
+              </div>
+              <div class="vbb-right">
+                <button class="btn vb-btn"><i class="fas fa-volume"></i></button>
+                <button class="btn vb-btn"><i class="fas fa-cog"></i></button>
+                <button class="btn vb-btn"><i class="fas fa-expand-alt"></i></button>
+                <label for="ar-show" class="btn vb-btn" id="aside-accordion-trigger"><i class="fas fa-compress-alt"></i></label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="accordion-right">
+        <div class="ar-label">
+          <h4>Conteúdo do curso</h4>
+          <label for="ar-show"><i class="fas fa-xmark"></i></label>
+        </div>
+        <div class="cc-accordion">
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-1" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-1" class="cc-accordion-label">Seção 1: Introdução</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>  
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-2" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-2" class="cc-accordion-label">Seção 2: Conceitos Fundamentais</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-3" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-3" class="cc-accordion-label">Seção 3: Construção de Layout</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-4" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-4" class="cc-accordion-label">Seção 4: Flexbox com Tailwind</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-5" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-5" class="cc-accordion-label">Seção 5: Grid com Tailwind</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-6" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-6" class="cc-accordion-label">Seção 6: Customização do Tailwind</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-7" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-7" class="cc-accordion-label">Seção 7: Projeto 1: Spotify Clone</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-8" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-8" class="cc-accordion-label">Seção 8: Espaçamento e alinhamento</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-9" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-9" class="cc-accordion-label">Seção 9: Tipografia</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-10" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-10" class="cc-accordion-label">Seção 10: Backgrounds</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-11" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-11" class="cc-accordion-label">Seção 11: Projeto 2: Facebook Clone</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-12" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-12" class="cc-accordion-label">Seção 12: Bordas</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-13" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-13" class="cc-accordion-label">Seção 13: Ineratividade</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-14" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-14" class="cc-accordion-label">Seção 14: Projeto 3: Clone Amazon</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-15" class="cc-accordion-input">
+            <div class="accordion-top">      
+              <label for="cc-accordion-right-15" class="cc-accordion-label">Seção 15: Novos recursos da versão 2</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-16" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-16" class="cc-accordion-label">Seção 16: Otimização do CSS para a produção</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cc-accordion-right-17" class="cc-accordion-input">
+            <div class="accordion-top">
+              <label for="cc-accordion-right-17" class="cc-accordion-label">Seção 17: Fechamento do curso</label>
+              <p><span>15/15</span>|<span>1h 10m</span></p>
+            </div>
+            <div class="accordion-content">
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">1. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">2. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">3. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">4. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+              <div class="cca-item">
+                <input type="checkbox" name="" id="" class="lesson-check">
+                <div class="lesson-text">
+                  <p class="lesson-heading">5. Intro</p>
+                  <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-menu">
+        <input type="radio" name="menu-radio" class="menu-item-radio" id="search-icon" checked>
+        <input type="radio" name="menu-radio" class="menu-item-radio" id="course-content">
+        <input type="radio" name="menu-radio" class="menu-item-radio" id="overview">
+        <input type="radio" name="menu-radio" class="menu-item-radio" id="qea">
+        <input type="radio" name="menu-radio" class="menu-item-radio" id="obs">
+        <input type="radio" name="menu-radio" class="menu-item-radio" id="ads">
+
+        <div class="trigger-container">
+          <label for="search-icon" class="menu-item-label"><i class="fas fa-search"></i></label>
+          <label for="course-content" class="menu-item-label">Conteúdo do curso</label>
+          <label for="overview" class="menu-item-label">Visão Geral</label>
+          <label for="qea" class="menu-item-label">Perguntas e respostas</label>
+          <label for="obs" class="menu-item-label">Observações</label>
+          <label for="ads" class="menu-item-label">Anúncios</label>
+        </div>
+
+        <section id="search-wrapper">
+          <div class="sc-form-container">
+            <form action="" class="sc-form">
+              <input type="text" name="" id="" placeholder="Pesquisar Conteúdo do Curso...">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <span class="sc-span">Iniciar uma nova pesquisa</span>
+          <p>Para encontrar aulas ou recursos</p>
+        </section>
+    
+        <section id="course-content-wrapper">
+          <div class="cc-accordion">
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-1" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-1" class="cc-accordion-label">Seção 1: Introdução</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>  
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-2" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-2" class="cc-accordion-label">Seção 2: Conceitos Fundamentais</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-3" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-3" class="cc-accordion-label">Seção 3: Construção de Layout</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-4" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-4" class="cc-accordion-label">Seção 4: Flexbox com Tailwind</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-5" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-5" class="cc-accordion-label">Seção 5: Grid com Tailwind</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-6" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-6" class="cc-accordion-label">Seção 6: Customização do Tailwind</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-7" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-7" class="cc-accordion-label">Seção 7: Projeto 1: Spotify Clone</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-8" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-8" class="cc-accordion-label">Seção 8: Espaçamento e alinhamento</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-9" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-9" class="cc-accordion-label">Seção 9: Tipografia</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-10" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-10" class="cc-accordion-label">Seção 10: Backgrounds</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-11" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-11" class="cc-accordion-label">Seção 11: Projeto 2: Facebook Clone</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-12" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-12" class="cc-accordion-label">Seção 12: Bordas</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-13" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-13" class="cc-accordion-label">Seção 13: Ineratividade</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-14" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-14" class="cc-accordion-label">Seção 14: Projeto 3: Clone Amazon</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-15" class="cc-accordion-input">
+              <div class="accordion-top">      
+                <label for="cc-accordion-15" class="cc-accordion-label">Seção 15: Novos recursos da versão 2</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-16" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-16" class="cc-accordion-label">Seção 16: Otimização do CSS para a produção</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="cc-accordion-17" class="cc-accordion-input">
+              <div class="accordion-top">
+                <label for="cc-accordion-17" class="cc-accordion-label">Seção 17: Fechamento do curso</label>
+                <p><span>15/15</span>|<span>1h 10m</span></p>
+              </div>
+              <div class="accordion-content">
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">1. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">2. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">3. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">4. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+                <div class="cca-item">
+                  <input type="checkbox" name="" id="" class="lesson-check">
+                  <div class="lesson-text">
+                    <p class="lesson-heading">5. Intro</p>
+                    <span class="lesson-duration"><i class="fas fa-play-circle"></i>4m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </section>
+
+        <section id="overview-wrapper">
+          <div class="overview-container">
+            <div class="ow-top">
+              <h1>Sobre este curso</h1>
+              <p>Aprenda todos os recursos de Tailwind com o apoio de diversos exercícios e construindo projetos reais do início ao fim!</p>
+            </div>
+            <div class="ow-section" id="ow-numbers">
+              <div>
+                <p>Pelos Números</p>
+              </div>
+              <div>
+                <p>Nível de experiência: Todos os níveis</p>
+                <p>Alunos: 1146</p>
+                <p>Idiomas Português</p>
+                <p>Legendas: Não</p>
+              </div>
+              <div>
+                <p>Aulas 157</p>
+                <p>Vídeo: 11,5 horas no total</p>
+              </div>
+            </div>
+            <div class="ow-section">
+              <div>
+                <p>Certificados</p>
+              </div>
+              <div>
+                <p>Termine o curso por completo para receber um certificado da Udemy</p>
+                <button>Certificado da Udemy</button>
+              </div>
+            </div>
+            <div class="ow-section">
+              <div>
+                <P>Recursos</P>
+              </div>
+              <div>
+                <p>Disponível em <a href="#" class="mq-purple">IOS</a>e<a href="#" class="mq-purple">Android</a></p>
+              </div>
+            </div>
+            <div class="ow-section">
+              <div>
+                <p>Descrição</p>
+              </div>
+              <article class="ow-text">
+                <p><b> * O Curso já está atualizado com a versão 2 do Tailwind </b> (jan/2021)</p>
+                
+                <p><b>Tailwind</b> foi criado para revolucionar o desenvolvimento de aplicações web, a abordagem utility first agiliza muito o desenvolvimento, pois gastamos menos tempo com CSS e conseguimos construir layouts incríveis com poucas linhas de código.</p>             
+                <p> Neste curso você vai aprender Tailwind CSS do básico ao avançado, todos os recursos do framework são amplamente explicados com o auxílio de exemplos reais, simulando situações que ocorrem no dia a dia de um programador. </p>             
+                <p>O curso conta ainda com exercícios que estimularão o seu aprendizado, para reforçar seu   conhecimento sobre os tópicos e seções teóricas, além de desafiar você a atingir o próximo nível e dominar a ferramenta.</p>              
+                <p>E ainda construiremos juntos projetos incríveis baseados em aplicações reais, desde a primeira linha de código até o projeto pronto para a produção, utilizando tudo que foi abordado no curso e ainda <b>Técnicas Modernas</b> como: mobile first, HTML semântico, estruturação de projeto e muito mais!</p>              
+                <p>Veja alguns dos recursos abordados no curso:</p>
+                <ul>
+                  <ow class="list">
+                    <li class="ow-list-item">
+                      <p>Instalação do Tailwind;</p>
+                    </li>
+                    <li class="ow-list-item">
+                      <p><b>Customização</b> do framework;</p>
+                    </li>
+                    <li class="ow-list-item">
+                      <p>Layout <b>mobile first;</b></p>
+                    </li>
+                    <li class="ow-list-item">
+                      <p>Construção de layout com <b>Grid</b> e <b>Flexbox</b>;</p>
+                    </li>
+                    <li class="ow-list-item">
+                      <p>Criação de projetos web;</p>
+                    </li>
+                    <li class="ow-list-item">
+                      <p>Princípios de arquitetura de software;</p>
+                    </li>
+                    <li class="ow-list-item">
+                      <p>Boas práticas e clean code;</p>
+                    </li>
+                    <li class="ow-list-item">
+                      <p>Spacing, sizing, tipografia, background, borders e muito mais!</p>
+                    </li>
+                  </ow>
+                </ul>
+                <p>O foco principal do curso é lhe ensinar a como utilizar a ferramenta de <b>forma profissional</b>, explorando todas as funcionalidades de Tailwind e situações que acontecem no desenvolvimento de projetos, para que você se prepare para utilizar de forma profissional.</p>             
+              <p> Ao finalizar o curso você estará apto a utilizar o Tailwind de forma avançada, criando qualquer layout que for preciso ou replicar qualquer site que você deseje.</p>              
+              <p>O curso é voltado para a prática, este é o último curso que você vai precisar fazer para aprender e dominar o Tailwind.</p>              
+              <p><p>Está pronto para criar layouts incríveis de uma forma fácil e simples?</p> Te espero então para desvendarmos o Tailwind CSS juntos! :)</p>    
+              <b>O que você aprenderá:</b>
+              <ul class="ow-list">
+                <li class="ow-list-item">
+                  <p>Básico ao avançado de Tailwind CSS</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Criar projetos de Tailwind com Grid CSS e Flexbox</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Criar layouts modernos com Tailwind CSS</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Responsividade com Tailwind</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Desenvolvimento Mobile First</p>
+                </li>
+              </ul>
+              <b>Há algum requisito ou pré-requisito para o curso?</b>
+              <ul class="ow-list">
+                <li class="ow-list-item">
+                  <p>Conhecimentos básicos em HTML e CSS</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Vontade de aprender</p>
+                </li>
+              </ul>
+              <b>Para quem é este curso:</b>
+              <ul class="ow-list">
+                <li class="ow-list-item">
+                  <p>Desenvolvedores front end</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Desenvolvedores back end</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Analistas de sistemas</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Quem deseja aprender Tailwind CSS de forma prática com muitos projetos</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Quem deseja dominar o Tailwind CSS</p>
+                </li>
+                <li class="ow-list-item">
+                  <p>Desenvolvedores iniciantes</p>
+                </li>
+              </ul>
+              </article>
+            </div>
+            <div class="ow-section">
+              <div>
+                <p>Instrutor</p>
+              </div>
+              <article class="ow-text">
+                <div class="owt-top">
+                  <img src="" alt="">
+                  <div>
+                    <b>Matheus Battisti</b>
+                    <p>Desenvolvedor Full Stack</p>
+                  </div>
+                </div>
+                <div class="owt-media">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-clipboard"></i></a>
+                </div>
+                <div class="owt-text">
+                  <p>Olá, eu sou o Matheus, desenvolvedor Full Stack e amo trabalhar nesta área que me oferece diversas oportunidades de aprender novas tecnologias todos os dias.</p>
+                  <p>Por este motivo estudo constantemente visando aprimorar minhas habilidades e conhecer novas libs, frameworks, linguagens e novas tecnologias que me chamam a atenção.</p>
+                  <p>Como acredito que conhecimento quanto mais se compartilha mais se têm, decidi dividir o que aprendi durante esse tempo na minha carreira profissional.</p>
+                  <p>E foi então que nasceu a ideia do Hora De Codar, que hoje é um blog e um canal no YouTube, lá ministro cursos grátis de diversas tecnologias que fui utilizando e estudando durante minha vivência na área, e agora resolvi expandir meus cursos para a Udemy, para abraçar o maior número de pessoas.</p>
+                  <p>Pois <b>o meu objetivo</b> é capacitar quem deseja ser desenvolvedor/programador para o mercado de trabalho, atingindo um público que tem pouco ou nenhum investimento para realizar esse sonho; como meu aprendizado foi semelhante a este método nada mais justo de que eu retornar da mesma forma. :)</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <label for="over-show" class="mq-purple" id="over-show-label"><i class="fas fa-chevron-down"></i></label>
+        </section>
+    
+        <section id="qa-wrapper">
+          <form action="" class="sc-form">
+            <input type="text" name="" id="" placeholder="Pesquisar em todas as perguntas do curso...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <div class="main-filter">
+            <button class="btn f-btn">Todas as aulas<i class="fas fa-chevron-down"></i></button>
+            <button class="btn f-btn">Classificar por recomendado<i class="fas fa-chevron-down"></i></button>
+            <button class="btn f-btn">Filtrar perguntas<i class="fas fa-chevron-down"></i></button>
+          </div>
+    
+          <div class="qa-questions">
+            <div class="qaq-heading">
+              <h1>Todas as perguntas neste curso <span>(3)</span></h1>
+            </div>
+    
+            <div class="qaq-items">
+              <div class="qaq-question">
+                <div class="main-question">
+                  <div class="question-top">
+                    <div class="user-icon-container">
+                      <img src="" alt="">
+                    </div>
+                    <h2 class="mq-h">Erro No Components</h2>
+                  </div>
+                  <div class="question-content">                
+                    <p class="mq-q">Professor, faço tudo certo como está no vídeo, mas na hora que eu vou colocar o componente que eu</p>
+                  </div>
+                  <div class="question-info">
+                    <p class="mq-purple">Rodolfo • Aula 20</p>
+                    <p>7 Meses atrás</p>
+                  </div>
+                </div>
+                <div class="data-container">
+                  <span>6<i class="fas fa-arrow-circle-up"></i></span>
+                  <span>2<i class="fas fa-square"></i></span>
+                </div>
+              </div>
+              <div class="qaq-question">
+                <div class="main-question">
+                  <div class="question-top">
+                    <div class="user-icon-container">
+                      <img src="" alt="">
+                    </div>
+                    <h2 class="mq-h">Erro No Components</h2>
+                  </div>              
+                  <div class="question-content">                
+                    <p class="mq-q">Professor, faço tudo certo como está no vídeo, mas na hora que eu vou colocar o componente que eu</p>
+                  </div>
+                  <div class="question-info">
+                    <p class="mq-purple">Rodolfo • Aula 20</p>
+                    <p>7 Meses atrás</p>
+                  </div>
+                </div>
+                <div class="data-container">
+                  <span>6<i class="fas fa-arrow-circle-up"></i></span>
+                  <span>2<i class="fas fa-square"></i></span>
+                </div>
+              </div>
+              <div class="qaq-question">
+                <div class="main-question">
+                  <div class="question-top">
+                    <div class="user-icon-container">
+                      <img src="" alt="">
+                    </div>
+                    <h2 class="mq-h">Erro No Components</h2>
+                  </div>
+                  <div class="question-content">                
+                    <p class="mq-q">Professor, faço tudo certo como está no vídeo, mas na hora que eu vou colocar o componente que eu</p>
+                  </div>
+                  <div class="question-info">
+                    <p class="mq-purple">Rodolfo • Aula 20</p>
+                    <p>7 Meses atrás</p>
+                  </div>
+                </div>
+                <div class="data-container">
+                  <span>6<i class="fas fa-arrow-circle-up"></i></span>
+                  <span>2<i class="fas fa-square"></i></span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-more">Ver Mais</button>
+            <a href="#" class="new-ask-btn">Fazer uma nova pergunta</a>
+          </div>
+    
+        </section>
+    
+        <section id="obs-wrapper">
+          <form action="" class="sc-form">
+            <input type="text" name="" id="" placeholder="Criar uma nova anotação em 0:15">
+            <button type="submit"><i class="fas fa-plus-circle"></i></button>
+          </form>
+          <div class="main-filter">
+            <button class="btn f-btn">Todas as Aulas<i class="fas fa-chevron-down"></i></button>
+            <button class="btn f-btn">Classificar por mais recente<i class="fas fa-chevron-down"></i></button>
+          </div>
+          <span>Clique na caixa "Criar uma nova anotação", no botão "+" ou pressione "B" para criar sua primeira anotação.</span>
+        </section>
+        <section id="ad-wrapper">
+          <div class="ad-items">
+            <div class="ad-item">
+              <div class="ad-top">
+                <div class="user-icon-container">
+                  <img src="" alt="">
+                </div>
+                <div class="ad-info">
+                  <div class="ad-name">
+                    <p class="mq-purple">Matheus</p>
+                  </div>
+                  <div class="adi-text">
+                    <p>Postou um anúncio • <span>12 dias atrás</span> • <i class="fas fa-flag"></i></p>
+                  </div>
+                </div>
+              </div>
+              <div class="ad-text">
+                <h1 class="ad-heading">🔴 [LIVE] Curso de TypeScript e dúvidas de programação</h1>
+                <div class="adt-ad">
+                  <p>Fala galera, beleza?</p>
+                  <p>Já já vai começar uma live no meu canal, vamos falar sobre o novo curso de TypeScript e também sobre desenvolvimento web no geral, vou tirar dúvidas de vocês, bora lá?</p>
+                  <p>O link é: <a href="#" class="mq-purple">https://www.youtube.com/watch?v=voQEQ49_tp8</a></p>
+                  <p>Começamos as 20:00!</p>
+                  <p>Um abraço,</p>
+                  <p>Matheus</p>
+              </div>
+              <div class="ad-bottom">
+                <div class="user-icon-container">
+                  <img src="" alt="">
+                </div>
+                <input type="text" name="" id="" class="ad-input" placeholder="Insira seu comentário">
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div id="footer-container">
+      <section id="footer-top">
+        <div class="ft-left">
+          <h2>Compartilhe seu conhecimento</h2>
+          <p>Crie um curso em vídeo online, atraia alunos do mundo todo e ganhe dinheiro</p>
+        </div>
+        <div class="ft-right">
+          <button class="btn">Ensine na Udemy</button>
+        </div>
+      </section>
+
+      <section id="footer-inc">
+        <div class="fi-left">
+          <p>As melhores empresas escolhem a <a href="#">Udemy Business</a> para desenvolver as habilidades de carreira necessárias</p>
+        </div>
+        <div class="fi-right">
+          <a href="#" class="fi-right-link"><img src="./img/footer_inc1.svg" alt=""></a>
+          <a href="#" class="fi-right-link"><img src="./img/footer_inc2.svg" alt=""></a>
+          <a href="#" class="fi-right-link"><img src="./img/footer_inc3.svg" alt=""></a>
+          <a href="#" class="fi-right-link"><img src="./img/footer_inc4.svg" alt=""></a>
+          <a href="#" class="fi-right-link"><img src="./img/footer_inc5.svg" alt=""></a>
+        </div>
+      </section>
+
+      <section id="footer-links">
+        <div class="fl-items">
+          <ul class="fli-list">
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Udemy Business</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Ensine na Udemy</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Obtenha o aplicativo</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Quem Somos</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Fale conosco</a>
+            </li>
+          </ul>
+          <ul class="fli-list">
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Carreiras</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Blog</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Ajuda e suporte</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Afiliado</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Investidores</a>
+            </li>
+          </ul>
+          <ul class="fli-list">
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Termos</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Política de Privacidade</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Configurações de cookie</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Mapas do site</a>
+            </li>
+            <li class="fli-list-item">
+              <a href="#" class="fli-link">Declaração de acessibilidade</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn"><i class="fas fa-globe"></i>Português</button>
+      </section>
+      <section id="footer-copy">
+        <div class="fc-left">
+          <img src="./img/udemy_logo.svg" alt="">
+        </div>
+        <div class="fc-right">
+          <p>&copy; 2022 Udemy Inc.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  transition: .5s;
+}
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color)
+}

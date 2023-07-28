@@ -1,0 +1,106 @@
+@use '../1-base/variables'
+@use "mixins"
+
+.header-top
+    background-color: variables.$secondary-bg-color
+    padding: .8rem
+    
+    @include mixins.mobile
+        display: none
+
+    &-container
+        @include mixins.center
+        @include mixins.flex($jc: space-between)
+        width: 100%
+
+        div
+             @include mixins.flex
+
+        i
+            margin-right: .5rem
+
+        span
+            margin: 0 .7rem
+
+            &,a
+                color: variables.$light-color
+
+.main-header
+    background-color: variables.$bg-color
+    padding: 1rem 0
+
+    #brand
+        @include mixins.font($s: 3rem,$w: 900)
+        color: variables.$light-color
+
+    .fa-bolt
+        font-size: 2rem
+
+    &-container
+        @include mixins.center
+        @include mixins.flex($jc: space-between)
+        width: 100%
+
+        @include mixins.mobile
+            flex-direction: column
+
+        >*
+            margin: .5rem 0
+        
+    form
+        @include mixins.flex
+        width: 37%
+
+        @include mixins.mobile
+            width: 80%
+
+    .header-actions-menu
+        @include mixins.flex
+
+        .wishlist-container,.header-cart-container
+            @include mixins.flex($d: column)
+            margin: 0 1rem
+            padding: 1rem 0
+
+            i,a
+                color: #fff
+                transition: .5s
+                
+            &:hover
+                i,a
+                    color: variables.$primary-color
+                    cursor: pointer
+
+        .qtd
+            background-color: variables.$primary-color
+            width:1.2rem
+            height: 1.2rem
+            border-radius: 50%
+            color: variables.$light-color
+            @include mixins.flex
+            position: relative
+            top: 3px
+            right: -1.2rem
+
+.header-bottom
+    border-top: 3px solid variables.$primary-color
+    border-bottom: 1px solid variables.$section-bg-color
+    padding: 1rem
+    margin-bottom: 5rem
+
+    @include mixins.mobile
+        display: none
+
+    nav
+        @include mixins.center
+        margin: 0
+
+    ul
+        @include mixins.flex
+
+        li
+            margin-right: .5rem
+
+        a
+            color: variables.$link-color
+            @include mixins.hover

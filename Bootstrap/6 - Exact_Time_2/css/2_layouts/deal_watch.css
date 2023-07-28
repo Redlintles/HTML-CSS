@@ -1,0 +1,49 @@
+#deal-container {
+  background-size: 120px;
+  height: 650px;
+  background: var(--dark-bg-color) url("../../img/relogio7.png") no-repeat right center;
+  margin: 2rem 0;
+  position: relative;
+}
+#deal-container .row {
+  height: 100%;
+}
+#deal-container-caption {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+#deal-container-caption > * {
+  margin: 1rem 0;
+}
+#deal-container-caption span {
+  color: var(--primary-color);
+  font-size: .9rem
+}
+#deal-container-caption h3 {
+  font-size: 50px;
+  color: var(--light-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#deal-container-caption p {
+  color: var(--secondary-color);
+  font-size: .9rem;
+}
+@media (min-width: 768px) {
+  #deal-container {
+    height: 500px;
+    background-position-x: 90%;
+    background-position-y: 50%;
+    background-size: 190px;
+  }
+  #deal-container-caption {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+  }
+  #deal-container-caption h3 {
+    font-size: 70px;
+  }
+}

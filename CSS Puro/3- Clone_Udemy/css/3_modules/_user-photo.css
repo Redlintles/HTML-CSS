@@ -1,0 +1,11 @@
+.user-icon-container {
+  width: 30px;
+  height:30px;
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  border-radius: 50%;
+  margin-top: .5rem;
+}

@@ -1,0 +1,44 @@
+#ad-wrapper .user-icon-container {
+  margin-top: 0;
+  margin-right: .5rem;
+}
+#ad-wrapper .mq-purple {
+  font-weight: 600;
+}
+#ad-wrapper .user-icon-container {
+  background-color: black;
+}
+.ad-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.adi-text {
+  font-size: .7rem;
+}
+.ad-heading {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.adt-ad {
+  display: flex;
+  flex-direction: column;
+}
+.adt-ad p {
+  font-size: .8rem;
+  line-height: 1.5;
+  letter-spacing: .25px;
+  margin: .5rem 0;
+}
+.ad-bottom {
+  display: flex;
+  width: 100%;
+}
+.ad-bottom input {
+  flex-grow: 1;
+  height: 2.5rem;
+  margin-left: .5rem;
+  padding-left: .5rem;
+  outline: none;
+  border: 1px solid black;
+}

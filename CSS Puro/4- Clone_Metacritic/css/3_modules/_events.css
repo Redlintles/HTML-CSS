@@ -1,0 +1,28 @@
+#summary-radio:checked ~ #media-info .mi-change-content .micc-label:nth-child(1),
+#critic-radio:checked ~ #media-info .mi-change-content .micc-label:nth-child(2),
+#user-radio:checked ~ #media-info .mi-change-content .micc-label:nth-child(3),
+#detail-radio:checked ~ #media-info .mi-change-content .micc-label:nth-child(4),
+#trailer-radio:checked ~ #media-info .mi-change-content .micc-label:nth-child(5){
+  background-color: #CCC;
+  color: black;
+}
+#metascore-toggle:checked ~ #ac-critic-top,
+#userscore-toggle:checked ~ #ac-user-top {
+  display: flex;
+}
+@media(min-width: 1200px) {
+  #main-content > div {
+    display: none;
+  }
+  #summary-radio:not(:checked) ~ #main-content #summary-section {
+    display: none;
+  }
+  #summary-radio:checked ~ #main-content #summary-section,
+  #critic-radio:checked ~ #main-content #critic-section,
+  #user-radio:checked ~ #main-content #user-section,
+  #detail-radio:checked ~ #main-content #detail-section,
+  #trailer-radio:checked ~ #main-content #trailer-section {
+    display: flex !important;
+    flex-direction: column;
+  }
+}

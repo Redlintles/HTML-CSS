@@ -1,0 +1,49 @@
+@use "../3_modules/mixins";
+
+
+@for $i from 1 through 6 {
+  #img#{$i} {
+    @include mixins.background(url("../img/g_#{$i}.jpg"));
+    height: 200px;
+  }
+}
+
+#separator {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+#gallery-container {
+
+  #main-banner {
+    @include mixins.background(url("../img/g_1.jpg"));
+    height: 400px;
+    position: relative;
+    margin-bottom: 2rem;
+
+    @include mixins.media {
+      height: 300px;
+    }
+
+    &-caption {
+      background-color: #fff;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      padding: 1.5rem;
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      h2,p {
+        margin-bottom: .5rem;
+      }
+    }
+    
+    .btn {
+      @include mixins.button;
+    }
+  }
+}

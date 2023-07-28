@@ -1,0 +1,64 @@
+@use "../1_base/variables";
+@use "../3_modules/mixins";
+
+
+#links-section {
+  height: auto;
+
+  .info-container {
+    height: 250px;
+    padding: 2rem;
+    border-top: 1px solid variables.$secondary-color;
+    border-bottom: 1px solid variables.$secondary-color;
+    @include mixins.flex($jc: center, $ai: center,$d: column);
+
+    h5 {
+      color: variables.$light-color;
+      font-size: 1.5rem;
+      margin: 0 0 .5rem;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    ul {
+      @include mixins.flex($jc: center, $ai: center, $d:column);
+
+      li {
+        margin: .3rem 0;
+      }
+    }
+  }
+
+  #middle-info {
+    @include mixins.flex($jc: center, $ai: center, $d: column);
+    @include mixins.media {
+      border-left: 1px solid variables.$secondary-color;
+      border-right: 1px solid variables.$secondary-color;
+    }
+    h4 {
+      font-weight: bold;
+      color: variables.$light-color;
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    &-text {
+      color: variables.$secondary-color;
+      display: block;
+      margin: 1.5rem 0;
+    }
+
+    &-phone {
+      color: variables.$primary-color;
+      font-weight: 1000;
+      font-size: 2rem;
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+fas fa-ellipsis-v
+fas fa-share
+far fa-trophy
+fas fa-arrow-left
+fas fa-chevron-down
+fas fa-play
+fas fa undo-alt
+fas fa-redo-alt
+fas fa-clipboard-list-check
+fas fa-volume
+fas fa-expand-alt
+fas fa-compress-alt
+fas fa-cog
+far fa-globe
+fas fa-plus-circle
+fas fa-search
+fas fa-play-circle

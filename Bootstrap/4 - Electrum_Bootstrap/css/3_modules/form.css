@@ -1,0 +1,26 @@
+.form-rounded input{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 2rem;
+}
+
+.form-rounded button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -1rem;
+}
+
+.form-rounded {
+  margin: 1rem;
+}
+
+.form-rounded input::placeholder {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (min-width:768px) {
+  .form-rounded {
+    margin: 0;
+  }
+}

@@ -1,0 +1,11 @@
+@media(min-width: 1200px) {
+  footer {
+    width: var(--main-container-width);
+  }
+  .footer-mobile {
+    display: none;
+  }
+  .footer-pc {
+    display: flex;
+  }
+}

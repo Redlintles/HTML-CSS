@@ -1,0 +1,74 @@
+@use "../1-base/variables"
+@use "mixins"
+
+.deal-container
+    @include mixins.center
+    background-color: variables.$section-bg-color
+    height: 400px
+    max-width: 100%
+    background-image: url("../img/deal_headset.png")
+    background-repeat:  no-repeat
+    background-position-x: 95%
+    backgorund-position-y: 1rem
+    background-size: 20%
+
+    @include mixins.mobile
+        height: 1000px
+        background-size: 100%
+        background-position-y: 95%
+
+    &-content
+        @include mixins.flex($d:column)
+        @include mixins.mobile
+            position: relative
+            top:-20%
+
+        >*
+            margin-bottom: 2rem
+
+        &-title
+            font-size: 2rem
+            @include mixins.mobile
+                text-align: center
+
+        &-subtitle
+            @include mixins.font($s: 1.5rem,$w: 400)
+            @include mixins.mobile
+                text-align: center
+
+    &-timer
+        display: flex
+        margin-bottom: 1rem
+
+        @include mixins.mobile
+            @include mixins.flex($w:wrap,$ai: flex-start)
+            width: 300px
+
+        &-unity
+            @include mixins.flex($d: column)
+            width: 100px
+            height: 100px
+            padding: 3.2rem
+            margin: 0 1rem
+            border-radius: 50%
+            background-color: variables.$primary-color
+            transition: .5s
+
+            @include mixins.mobile
+                margin: .5rem
+
+            &-time
+                @include mixins.font($s: 1.5rem,$w: bold)
+                text-transform: uppercase
+                color: variables.$light-color
+
+            &-word
+                font-size: 1rem
+                color: variables.$light-color
+
+            &:hover
+                background-color: variables.$light-color
+                border: 1px solid variables.$primary-color
+
+                *
+                    color: variables.$primary-color

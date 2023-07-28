@@ -1,0 +1,255 @@
+.how-to-section {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  margin: 3rem 0;
+  overflow-x: auto;
+  place-items: center;
+}
+.how-to__item {
+  grid-column: span 1;
+  display: flex;
+  padding: 1rem;
+  height: 100%;
+}
+
+.item__icon {
+  width: 5rem;
+}
+.item__title {
+  margin-bottom: .5rem;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.title__icon {
+  width: 3rem;
+}
+
+.helper-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.helper__img {
+  width: min-content;
+}
+.helper__contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 0;
+}
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 2rem);
+  padding: 0 1rem;
+  align-items: center;
+}
+.contact__item > span {
+  margin-bottom: 1rem;
+}
+.contact__item > button {
+  width: 100%;
+  white-space: nowrap;
+}
+.media__social-links {
+  margin: 2rem 0;
+}
+.helper__info {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0 2rem;
+  padding: 1rem 0;
+}
+
+.links__info-container {
+  width: 100%;
+}
+
+.info-container__title {
+  margin-bottom: 1rem;
+}
+.info-container__list {
+  width: 100%;
+  padding: 0 2rem;
+}
+.links__info-container > div {
+  margin: 1rem 0;
+}
+.info-container__list > li {
+  margin-bottom: .8rem;
+}
+
+.footer__link {
+  white-space: normal !important;
+}
+
+.media-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+.media__img {
+  width: 1.8rem;
+}
+.media-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.media-container > div:not(:last-child) {
+  margin-right: .75rem;
+}
+.media-container > h6 {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+.media-container > span {
+  margin-right: 2rem;
+}
+
+.media__social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media__social-links > h6 {
+  margin-bottom: 1rem;
+}
+
+.media  {
+  margin: 0 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.media:nth-child(1) {
+  background-image: url("../../img/photo77.png");
+}
+.media:nth-child(2) {
+  background-image: url("../../img/photo78.png");
+}
+.media:nth-child(3) {
+  background-image: url("../../img/photo79.png");
+}
+.media:nth-child(4) {
+  background-image: url("../../img/photo80.png");
+}
+
+.copy-section {
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy__text {
+  width: 80%;
+}
+.copy__text > p {
+  margin-bottom: .5rem;
+}
+.copy__images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  order: -1;
+  margin-bottom: 2rem;
+}
+.copy__img {
+  width: 5rem;
+}
+
+.sitemap__link {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid #777;
+}
+
+.dropdown__header > * {
+  pointer-events: none;
+}
+
+.dropdown__header > i {
+  transition: transform 1s ease;
+  transform: rotateZ(0deg);
+}
+
+.dropdown__content {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height .5s ease;
+}
+
+
+@media(min-width: 1200px) {
+  .how-to-section {
+    grid-template-columns: repeat(6, 1fr);
+    overflow: hidden;
+  }
+  .how-to__item {
+    padding: 0;
+  }
+  .title__icon {
+    display: none;
+  }
+  .helper__img {
+    width: 100%;
+  }
+  .footer-links {
+    flex-direction: row;
+    padding: 1rem 0;
+  }
+  .links__info-container {
+    width: calc(100% / 5);
+  }
+  .copy-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .copy__images {
+    order: unset;
+    justify-content: start;
+    margin-bottom: 0;
+    width: 20%;
+  }
+  .dropdown__header {
+    border-bottom: none;
+  }
+  .dropdown__header > i {
+    display: none;
+  }
+  .dropdown__content {
+    max-height: 100%;
+  }
+}

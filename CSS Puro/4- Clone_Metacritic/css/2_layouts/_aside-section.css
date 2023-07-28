@@ -1,0 +1,91 @@
+#aside-section {
+  display: none;
+  flex-direction: column;
+}
+.ac-title {
+  padding: .3rem .5rem;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ac-title h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .7rem;
+}
+.ac-title a {
+  color: white;
+  font-size: .7rem;
+}
+.as-awards-section .ac-title {
+  background-color: var(--secondary-yellow);
+}
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.ac-content {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 1rem;
+}
+.asa-item {
+  display: flex;
+}
+.asa-item:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+.asa-item i {
+  font-size: .8rem;
+  color: var(--main-yellow);
+  margin-right: .3rem;
+}
+.ase-list {
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.ase-list li {
+  margin-bottom: .2rem;
+}
+.ac-content > a {
+  align-self: flex-end;
+}
+.ac-toggle-container {
+  display: flex;
+  padding: .5rem .5rem 0;
+  background: linear-gradient(to bottom, #f1f1f1,#fff);
+  border-bottom: 1px solid #ccc;
+}
+.ac-label {
+  font-size: .6rem;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  margin-bottom: -.06rem;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: .5rem;
+  z-index: 10;
+  width: fit-content;
+  margin-right: .3rem;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: .3s;
+}
+.ac-label:hover {
+  color: var(--main-yellow)
+}
+.ac-more-games {
+  display: none;
+  flex-direction: column;
+}
+.ac-game-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+}

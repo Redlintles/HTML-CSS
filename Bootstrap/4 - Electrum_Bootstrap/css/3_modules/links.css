@@ -1,0 +1,55 @@
+a:not(#header-top a) {
+  text-decoration: none;
+  transition: .5s
+}
+
+header a {
+  font-size: 1.2rem;
+}
+
+#header-top a,
+#header-center a {
+  color: var(--light-color);
+}
+
+#header-center a:hover {
+  color: var(--primary-color);
+}
+
+footer a,
+#header-bottom a {
+  color: var(--link-color);
+}
+
+#header-bottom a:hover,
+footer a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+#footer-payments a {
+  border: none;
+}
+
+.link-container a {
+  color: var(--gray-text-color);
+  font-size: 1rem;
+}
+
+.banner-cover a {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .banner-cover a {
+    font-size: 1.2rem;
+  }
+  .link-container a {
+    font-size: .8rem;
+  }
+  header a {
+    font-size: .9rem;
+  }
+  
+}
+

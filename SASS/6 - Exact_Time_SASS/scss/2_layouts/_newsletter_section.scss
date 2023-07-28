@@ -1,0 +1,35 @@
+@use "../1_base/variables";
+@use "../3_modules/mixins";
+
+
+#newsletter {
+  background-color: variables.$dark-bg-color;
+  padding: 2rem 0;
+  border-bottom: 1px solid variables.$secondary-color;
+  @include mixins.flex($jc: center, $ai: center, $d: column);
+  
+
+  &-call {
+    color: variables.$secondary-color;
+    margin-bottom: 2rem;
+  }
+
+  &-media {
+    margin-top: 2rem;
+    @include mixins.flex($jc: center, $ai: center);
+
+    a {
+      margin: 0 1rem;
+      color: variables.$secondary-color;
+      font-size: 1.5rem;
+    }
+
+    i {
+      transition: .5s;
+    }
+
+    a:hover >  i {
+      color: variables.$primary-color;
+    }
+  }
+}

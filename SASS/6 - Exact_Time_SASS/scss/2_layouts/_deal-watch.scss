@@ -1,0 +1,62 @@
+@use "../1_base/variables";
+@use "../3_modules/mixins";
+
+
+.deal-watch {
+
+  background-color: variables.$dark-bg-color;
+  height: 550px;
+  margin: 2rem 0;
+  position: relative;
+
+  @include mixins.background(
+    $img:url("../img/relogio1.png"),
+    $size: 30%,
+    $position: center 90%
+  );
+
+
+  @include mixins.media {
+    height: 450px;
+    @include mixins.background(
+      $img:url("../img/relogio1.png"),
+      $size: 15%,
+      $position: 98% center
+    )
+  };
+
+  &-body {
+    @include mixins.flex($jc: center, $ai: center, $d:column);
+    padding-top: 2rem;
+
+    @include mixins.media {
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      padding: 0;
+
+    }
+    
+    .deal {
+
+      &-discount, &-title,&-text {
+        margin: 1rem 0;
+      }
+
+      &-discount {
+        color: variables.$primary-color;
+      }
+
+      &-title {
+        color: variables.$light-color;
+        font-size: 4rem;
+        text-transform: uppercase;
+      }
+
+      &-text {
+        color: variables.$secondary-color;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.tooltip--root {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip--root:is(:hover, :focus)>.tooltip,
+.tooltip:is(:hover, :focus) {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip {
+  position: absolute;
+  display: flex;
+  top: 2rem;
+  transform: translateX(-32%);
+  flex-direction: column;
+  width: max-content;
+  max-width: 12rem;
+  z-index: 10;
+  cursor: auto;
+}
+
+.tooltip--skin {
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+  box-shadow: 2px 2px 10px 3px #444;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+
+  border-bottom: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.tooltip>.txt--sm {
+  margin-bottom: .5rem;
+}

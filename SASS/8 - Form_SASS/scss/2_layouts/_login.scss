@@ -1,0 +1,28 @@
+@use "../3_modules/mixins";
+
+
+#img-container {
+  margin-top: 3rem;
+  @include mixins.flex($jc: center, $ai: center,$d:column);
+  
+
+  @include mixins.media {
+    order: -1;
+    margin: 0;
+  }
+}
+
+#form-container {
+  @include mixins.flex($jc:center,$ai:center,$d:column);
+  margin: auto 0;
+
+  @include mixins.media {
+    margin-left: 2rem;
+    align-items: flex-start;
+  }
+
+  form {
+    width: 90%;
+    height: auto;
+  }
+}

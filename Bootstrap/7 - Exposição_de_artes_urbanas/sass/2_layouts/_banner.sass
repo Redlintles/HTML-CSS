@@ -1,0 +1,19 @@
+@use "../1_base/variables"
+@use "../3_modules/mixins"
+
+.main-image
+    @include mixins.center-img
+    height: 400px
+    background-image: url('../img/g_1.jpg')
+    margin-bottom: 30px
+    position: relative
+
+    &-info
+        background-color: #fff
+        padding: 25px
+        position: absolute
+        left:25px
+        bottom: 25px
+
+        p
+            color: variables.$secondary-color

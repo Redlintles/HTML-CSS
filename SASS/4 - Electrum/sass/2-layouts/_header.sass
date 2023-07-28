@@ -1,0 +1,96 @@
+@use "../1-base/variables"
+@use "layout-mixins"
+@use "../1-base/mixins"
+
+.header
+    background: variables.$bg-color
+
+    &-top
+        background: variables.$secondary-bg-color
+        color: variables.$light-color
+        @include mixins.mobile
+            display: none
+
+        &-container
+            @include layout-mixins.center-content
+            padding: .8rem 0
+
+            span
+                margin-right: 1rem
+
+            i
+                margin-right: .6rem
+
+            a
+                color: variables.$light-color
+
+.main-header
+    &-container
+        @include layout-mixins.center-content
+        padding: 1.3rem 0
+ 
+        @include mixins.mobile
+            flex-direction: column
+            align-items: center
+
+        a,span,i
+            color: #fff
+
+        #brand
+            font-weight: 900
+            font-size: 3rem
+
+            i
+                color: variables.$primary-color
+                font-size: 2rem
+
+        #search-form
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 45%
+
+            @include mixins.mobile
+                width: 100%
+                margin: 2rem 0
+
+            input
+                height: 40px
+                
+            #text
+                width:60%
+                @include layout-mixins.rounded-input
+
+        .header-actions-menu
+            display: flex
+            align-items: center
+
+            .wishlist-container, .header-cart-container
+                @include layout-mixins.header-icon
+
+                @include mixins.mobile
+                    margin: 1rem
+
+.header-bottom
+    background-color: variables.$light-color
+    border-top: 3px solid variables.$primary-color
+    border-bottom: 2px solid variables.$section-bg-color
+    
+    ul
+        @include layout-mixins.center-content
+        justify-content: left
+        padding: 1rem 0
+
+        @include mixins.mobile
+            display: none
+    
+        li
+            margin-right: 1.3rem
+
+            a
+                color: variables.$link-color
+                border-bottom: 2px solid transparent
+
+                &:hover
+                    color: variables.$primary-color
+                    border-color: variables.$primary-color

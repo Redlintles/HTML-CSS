@@ -1,0 +1,73 @@
+@use "mixins"
+@use "../1-base/variables"
+
+.footer
+    padding: 5rem
+    background-color: variables.$bg-color
+
+    &-container
+        @include mixins.center
+        flex-direction: column
+
+    &-top
+        @include mixins.flex($jc: space-between,$ai: flex-start)
+        position: relative
+        top: -2rem
+
+        @include mixins.mobile
+            flex-direction: column
+
+        *
+            color: variables.$gray-text-color
+
+        h3
+            color: variables.$light-color
+            margin: 0 1rem 1.5rem 0
+            font-size: 1.8rem
+
+        &-links
+            @include mixins.flex($d: column,$ai:flex-start)
+            width: 20%
+
+            @include mixins.mobile
+                width: 100%
+              
+            li
+                margin-bottom: 1rem
+
+                a
+                    @include mixins.hover
+
+                    @include mixins.mobile
+                        text-align: center
+                    
+        &-about
+
+            @include mixins.mobile
+                margin-bottom: 2rem
+
+            p
+                margin-top: 1rem
+                max-width: 90%
+
+            i
+                color: red
+                margin-right: .5rem
+
+    &-bottom
+        width: 100%
+        @include mixins.flex($jc: space-between,$d: column)
+        margin: 3rem auto
+
+        &-payments
+            @include mixins.flex()
+
+            i
+                color: variables.$dark-color
+                font-size: 3rem
+                margin: .4rem
+                @include mixins.hover($u:0)
+
+        p
+            margin: 2rem 0
+            color: variables.$gray-text-color          

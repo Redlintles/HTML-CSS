@@ -1,0 +1,78 @@
+@use "../1-base/variables"
+@use "mixins"
+
+.login
+    padding-top: 3.5rem
+
+    &-container
+        @include mixins.flex($d: column)
+        background-color: #fff
+        height: 25rem
+        width: 28.2rem
+        margin-bottom: 2rem
+        border-radius: 10px
+        box-shadow: 2px 2px 20px #ccc
+
+        &-forgot
+                color: variables.$hover-color
+
+        .form-container
+            @include mixins.flex($d: column)
+            width: 100%
+            margin-top: 1rem
+            margin-bottom: .8rem
+            padding-bottom: 1.8rem
+            border-bottom: 1px solid #ccc
+
+            &-form
+                @include mixins.flex($d: column)
+                width: 100%
+            
+            input[type="submit"]
+                @include mixins.font($w: 600, $s: 1.5rem,$al: none)
+                background-color: variables.$hover-color
+                padding: .8rem
+                width: 92%
+                border-radius: 5px
+                border: none
+                margin-bottom: 1.2rem
+
+                &:hover
+                    background-color: variables.$primary-color
+
+        .text
+            width: 92%
+            margin: 0 auto
+            height: 3.8rem
+            outline: none
+            border: 1.5px solid #ddd
+            border-radius: 5px
+            font-size: 1.3rem
+            margin-bottom: 1rem
+            padding-left: 1rem
+            
+            &:focus
+                border: 1.5px solid variables.$primary-color
+
+            &::placeholder
+                @include mixins.font ($s: 1.2rem, $c: #999, $al: none)
+
+    &-newuser
+        @include mixins.flex
+        height: 5rem
+
+        &-button
+            @include mixins.font(600,1.2rem,$c: #fff)
+            padding: 1rem 1.15rem
+            border: none
+            background-color: variables.$new-color
+            border-radius: 5px
+
+            &:hover
+                background-color: variables.$new-color-hover
+
+    &-bottomtext
+        @include mixins.font($c: none,$s: 1.02rem)
+        
+        &-link
+            @include mixins.font(700,$c: #000)

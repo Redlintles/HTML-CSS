@@ -1,0 +1,35 @@
+#nls {
+  background-color: var(--dark-bg-color);
+  padding: 2rem;
+}
+#span-container{
+  text-align: center;
+}
+#nls > * {
+  margin: .5rem 0;
+}
+#nls span, #nls i {
+  color: var(--secondary-color);
+}
+#media-container {
+  display: flex;
+  justify-content: center;
+}
+#media-container i {
+  margin: 0 .5rem;
+  font-size: 1.5rem;
+  transition: .5s;
+}
+#media-container i:hover {
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  #form-container form{
+    width: 25%;
+  }
+  #nls {
+    padding: 2rem;
+  }
+}
+

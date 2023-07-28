@@ -1,0 +1,213 @@
+.rate-bar {
+  display: flex;
+  align-items: flex-end;
+  height: 20px;
+  margin: .5rem 0;
+}
+.rate-bar-score {
+  display: flex;
+  flex-flow: row-reverse;
+  position: relative;
+}
+.rate-unity {
+  width: 8px;
+  height: 20px;
+  background: url("../../img/rating_picker.png") 1px 1px;
+}
+.rate-bar span {
+  height: 100%;
+  padding: 0.2rem;
+  background-color: #333;
+  color: white;
+  font-size: .6rem;
+  display: flex;
+  width: min-content;
+  white-space: nowrap;
+  height: 20px;
+  align-items: center;
+}
+
+/* Nota 10 */
+
+.note10:hover,
+.note10:hover ~ .note9,
+.note10:hover ~ .note8 {
+  background: url("../../img/rating_picker.png") 10px 1px;
+}
+.note10:hover ~ .note7, 
+.note10:hover ~ .note6, 
+.note10:hover ~ .note5 {
+  background: url("../../img/rating_picker.png") 19px 1px;
+}
+.note10:hover ~ .note4, 
+.note10:hover ~ .note3, 
+.note10:hover ~ .note2, 
+.note10:hover ~ .note1, 
+.note10:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 9 */
+
+.note9:hover,
+.note9:hover ~ .note8 {
+  background: url("../../img/rating_picker.png") 10px 1px;
+}
+.note9:hover ~ .note7, 
+.note9:hover ~ .note6, 
+.note9:hover ~ .note5 {
+  background: url("../../img/rating_picker.png") 19px 1px;
+}
+.note9:hover ~ .note4, 
+.note9:hover ~ .note3, 
+.note9:hover ~ .note2, 
+.note9:hover ~ .note1, 
+.note9:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 8 */
+
+.note8:hover {
+  background: url("../../img/rating_picker.png") 10px 1px;
+}
+.note8:hover ~ .note7, 
+.note8:hover ~ .note6, 
+.note8:hover ~ .note5 {
+  background: url("../../img/rating_picker.png") 19px 1px;
+}
+.note8:hover ~ .note4, 
+.note8:hover ~ .note3, 
+.note8:hover ~ .note2, 
+.note8:hover ~ .note1, 
+.note8:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 7 */
+
+.note7:hover, 
+.note7:hover ~ .note6, 
+.note7:hover ~ .note5 {
+  background: url("../../img/rating_picker.png") 19px 1px;
+}
+.note7:hover ~ .note4, 
+.note7:hover ~ .note3, 
+.note7:hover ~ .note2, 
+.note7:hover ~ .note1, 
+.note7:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 6 */
+
+.note6:hover,
+.note6:hover ~ .note5 {
+  background: url("../../img/rating_picker.png") 19px 1px;
+}
+.note6:hover ~ .note4, 
+.note6:hover ~ .note3, 
+.note6:hover ~ .note2, 
+.note6:hover ~ .note1, 
+.note6:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 5 */
+
+.note5:hover {
+  background: url("../../img/rating_picker.png") 19px 1px;
+}
+.note5:hover ~ .note4, 
+.note5:hover ~ .note3, 
+.note5:hover ~ .note2, 
+.note5:hover ~ .note1, 
+.note5:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 4 */
+
+.note4:hover, 
+.note4:hover ~ .note3, 
+.note4:hover ~ .note2, 
+.note4:hover ~ .note1, 
+.note4:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 3 */
+
+.note3:hover, 
+.note3:hover ~ .note2, 
+.note3:hover ~ .note1, 
+.note3:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 2 */
+
+.note2:hover, 
+.note2:hover ~ .note1, 
+.note2:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota 1 */
+
+.note1:hover,
+.note1:hover ~ .note0 {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Nota Zero */
+
+.note0:hover {
+  background: url("../../img/rating_picker.png") 28px 1px;
+}
+
+/* Score display */
+
+.score-display {
+  position: absolute;
+  right: -20.5px;
+  top: 1px;
+}
+.score-display::after {
+  content: "0";
+  width: 10px;
+  text-align: center;
+}
+.note0:hover ~ .score-display::after{
+  content: "0";
+}
+.note1:hover ~ .score-display::after{
+  content: "1";
+}
+.note2:hover ~ .score-display::after{
+  content: "2";
+}
+.note3:hover ~ .score-display::after{
+  content: "3";
+}
+.note4:hover ~ .score-display::after{
+  content: "4";
+}
+.note5:hover ~ .score-display::after{
+  content: "5";
+}
+.note6:hover ~ .score-display::after{
+  content: "6";
+}
+.note7:hover ~ .score-display::after{
+  content: "7";
+}
+.note8:hover ~ .score-display::after{
+  content: "8";
+}
+.note9:hover ~ .score-display::after{
+  content: "9";
+}
+.note10:hover ~ .score-display::after{
+  content: "10";
+}

@@ -1,0 +1,112 @@
+#video-container {
+  width: 100%;
+  background-color: var(--main-gray);
+  height: 100%;
+  position: relative;
+}
+.vc-video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.video-heading {
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.1));
+  box-shadow: 2px 2px 10px rgba(0,0,0,.1);
+  height: auto;
+}
+.vc-video > *{
+  transition: .5s;
+  opacity: 0;
+}
+.vc-controls {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vc-controls button {
+  height: 2rem;
+}
+.vc-controls > i {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 5rem;
+  width: 4.9rem;
+  height: 4.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+}
+.vc-video:hover > * {
+  opacity: 1;
+}
+.vc-course-content {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  opacity: 1;
+  transition: none;
+}
+.video-bottom {
+  display: flex;
+  width: 100%;
+  padding: .5rem;
+  flex-direction: column;
+  background-color: transparent
+}
+.vb-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.vbb-left {
+  display: flex;
+}
+.vb-btn {
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+.vb-speed {
+  padding: 0 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vb-speed p {
+  line-height: 1;
+  font-weight: bold;
+  color: black;
+  height: auto;
+}
+.video-pb {
+  width: 100%;
+  background-color: white;
+  height: .3rem;
+  margin-bottom: .5rem;
+}
+.vp-progress-bar {
+  width: 40%;
+  background-color: var(--main-purple);
+  height: .3rem;
+}
+#aside-accordion-trigger {
+  display: none;
+}
+#aside-accordion-trigger i {
+  transform:  rotate(45deg);
+}
+@media (min-width: 768px) {
+  #aside-accordion-trigger {
+    display: inline-block;
+  }
+}

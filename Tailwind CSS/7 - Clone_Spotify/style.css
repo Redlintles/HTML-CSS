@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #nav-wrapper {
+    @apply flex fixed bg-black w-full px-3 md:px-20 py-4;
+  }
+
+  .navbar-container {
+    @apply container flex items-center mx-auto;
+  }
+
+  #burger-menu {
+    @apply flex justify-end flex-1 md:hidden text-white text-3xl;
+  }
+
+  #nav-links-container {
+    @apply items-end flex-1 text-white font-bold hidden md:flex;
+  }
+
+  #nav-links {
+    @apply flex-1 flex justify-end;
+  }
+
+  .nav-brand {
+    @apply w-20 md:w-125px;
+  }
+
+  #nav-links ul {
+    @apply flex justify-end flex-1;
+  }
+
+  .separator {
+    @apply border-l border-white;
+  }
+
+  .nav-item {
+    @apply px-4 hover:text-hoverspt text-sm;
+  }
+
+  #main-banner {
+    @apply flex flex-col justify-center items-center text-center py-40 px-4 bg-spotify-theme-mobile lg:bg-spotify-theme bg-banner-mobile lg:bg-banner bg-195% lg:bg-175% bg-purple-main text-green-main;
+  }
+
+  #main-banner h1 {
+    @apply text-5xl md:text-8xl lg:text-9xl mb-10 font-bold md:max-w-xl lg:max-w-4xl leading-none;
+  }
+
+  #main-banner p {
+    @apply md:text-lg mb-10;
+  }
+
+  #main-banner a {
+    @apply bg-green-main hover:bg-white text-purple-main text-sm rounded-full px-10 py-3 uppercase font-bold max-w-xl tracking-widest  transition duration-500;
+  }
+
+  /* Footer */
+  .footer-grid {
+    @apply grid grid-cols-1 md:grid-cols-6 bg-black text-white p-4 md:p-20;
+  }
+
+  .footer-grid > div {
+    @apply md:col-span-1 pt-10 md:pt-4;
+  }
+
+  .footer-grid h3 {
+    @apply uppercase text-gray-500 font-bold text-xs tracking-widest mb-5;
+  }
+
+  .footer-link {
+    @apply mb-5;
+  }
+
+  #footer-media {
+    @apply md:col-span-2 pt-10 md:pt-4;
+  }
+
+  #footer-media ul{
+    @apply flex md:justify-end;
+  }
+
+  #footer-media li {
+    @apply flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main mx-2;
+  }
+
+  #footer-bottom-list  {
+    @apply md:col-span-5;
+  }
+
+  #footer-bottom-list li {
+    @apply inline-block text-gray-600 text-xs mr-4;
+  }
+
+
+
+}

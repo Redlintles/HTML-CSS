@@ -1,0 +1,82 @@
+@use "./mixins";
+@use "sass:math";
+
+.container {
+  width: 95vw;
+  margin: 0 auto;
+
+  &-fluid {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.row {
+  @include mixins.flex($w:wrap);
+  width: 100%;
+  height: 100%;
+}
+
+.col {
+  flex: 1 1 0;
+
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      width: math.div(100%,12)*$i;
+    }
+  }
+
+  $breakpoints: (
+    "sm":576px,
+    "md":768px,
+    "lg":992px,
+    "xl":1200px,
+    "xxl":1400px
+  );
+
+  @each $breakpoint, $resolution in $breakpoints {
+    @media(min-width: $resolution) {
+      @for $i from 1 through 12 {
+        &-#{$breakpoint}-#{$i} {
+          width: math.div(100%,12)*$i;
+        }
+      }
+    }
+  }
+}
+
+.d {
+  $values: (
+    none,
+    block,
+    flex,
+    inline,
+    inline-flex,
+    inline-block,
+    grid,
+  );
+
+  $resolutions: (
+    "sm":576px,
+    "md":768px,
+    "lg":992px,
+    "xl":1200px,
+    "xxl":1400px
+  );
+
+  @each $value in $values {
+    &-#{$value} {
+      display: $value !important;
+    }
+  }
+
+  @each $name,$resolution in $resolutions {
+    @media(min-width: $resolution) {
+      @each $value in $values {
+        &-#{$name}-#{$value} {
+          display: $value !important;
+        }
+      }
+    }
+  }
+};
